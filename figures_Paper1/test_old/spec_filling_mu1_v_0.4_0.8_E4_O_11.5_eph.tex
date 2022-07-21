@@ -1,0 +1,222 @@
+\documentclass[10pt]{standalone}
+\usepackage[english]{babel} % language
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+
+%%%%%%%%%%%%
+% PGFPLOTS %
+%%%%%%%%%%%%
+\usepackage{pgfplots}    % pgfplots 
+\usepackage{tikz-3dplot} % 3D coordinate frames
+\usepackage{gnuplot-lua-tikz}
+\usepgfplotslibrary{fillbetween}
+\usepgfplotslibrary{colormaps}
+\pgfplotsset{compat=1.17}
+% \pgfplotsset{trig format plots=rad}
+
+%%%%%%%%%%%%%%%%% 
+% TikZ packages %
+%%%%%%%%%%%%%%%%%
+\usetikzlibrary{math}
+\usetikzlibrary{calc}
+\usetikzlibrary{decorations.markings}
+\usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{positioning}
+\usetikzlibrary{fit}
+\usetikzlibrary{matrix}
+\usetikzlibrary{intersections}
+\usetikzlibrary{bending}
+\usetikzlibrary{pgfplots.groupplots}
+
+\usepackage{xcolor}
+\usepackage{braket}
+ 
+% alternative
+%\definecolor{hturquoise}{RGB}{0,206,209}   %turquoise
+%\definecolor{hred}{RGB}{255,0,0}             % red 
+%\definecolor{hbrown}{RGB}{128,70,27}    % russet brown 
+%\definecolor{hpurple}{RGB}{111,45,168} % grape
+%\definecolor{hyellow}{RGB}{255,255,0}   % yellow
+\definecolor{hgray}{HTML}{323232}      % anthrazit gray 
+%\definecolor{hgreen}{RGB}{50,205,50}   % dark lime green 
+%\definecolor{hmagenta}{RGB}{255,0,255}   % magenta
+
+\definecolor{hcoral}{RGB}{255,127,80}     % coral
+\definecolor{hblue}{RGB}{0,112,255}        % Brandeis blue
+\definecolor{hred}{RGB}{199,44,72}         % raspberry red
+\definecolor{hlime}{RGB}{0,255,0}            % lime green
+\definecolor{hyellow}{RGB}{255,211,0}     % cyber yellow
+\definecolor{hcyan}{RGB}{0,255,255}       % bright cyan
+ 
+
+\DeclareMathAlphabet{\pazocal}{OMS}{zplm}{m}{n}
+\newcommand{\capcali}{\pazocal{I}}
+\newcommand{\capcalr}{\pazocal{R}}
+
+\begin{document} 
+
+\begin{tikzpicture}[>=Stealth]
+ 
+% foreground, background
+\pgfdeclarelayer{background}
+\pgfdeclarelayer{foreground}
+\pgfdeclarelayer{main} 
+\pgfsetlayers{background,main,foreground}
+
+\begin{groupplot}[
+group style={
+group size=2 by 1,
+xticklabels at=edge bottom,  
+yticklabels at=edge left,
+%vertical sep=10pt,
+horizontal sep=20pt
+}, 
+minor tick num=1, 
+width=0.6\textwidth,
+height=0.6\textwidth    
+]  
+
+
+% 1° figure 
+
+\nextgroupplot[
+xmin=-15.,      
+xmax=15., 
+ymin=0.00, 
+ymax=0.09,   
+minor tick num=1, 
+% grid=both,
+xlabel={$\omega/t^{*}$},
+ylabel={$A(\omega)/t^{*-1}$},
+legend style={at={(axis cs:-9.3,0.017)},anchor=north,mark options={scale=0.85},/tikz/every odd column/.append style={column sep=0.5mm},legend columns=1},
+legend cell align=left,
+clip mode=individual,
+clip marker paths=true, 
+xtick={-15,-10,-5,0,5,10,15},
+ytick={0.00,0.03,0.06,0.09},
+% yticklabels={\smash{\raisebox{0.1\height}{0}},0.002,0.004,0.006,0.008,0.01,0.012},
+% yticklabels={\smash{\raisebox{0.1\height}{0}},0.002,0.004,0.006,0.008,0.01,0.012,\smash{\raisebox{-0.8\height}{5}}},
+x tick label style={
+    /pgf/number format/.cd,
+    fixed,
+    fixed zerofill,
+    precision=0,
+    /tikz/.cd},
+y tick label style={
+    /pgf/number format/.cd,
+    fixed,
+    fixed zerofill, 
+    precision=0, 
+    /tikz/.cd}
+] 
+
+\addlegendimage{solid,color=hblue,scale={1.0},line width=1pt}
+\addlegendentry{$el$};
+\addlegendimage{solid,color=hred,scale={1.0},line width=1pt} 
+\addlegendentry{$el+ph$};
+
+
+% % % % % % % %  PLOTS 
+ 
+% \draw (axis cs:4,0) -- (axis cs:10,0.01);
+
+\addplot[solid,raw gnuplot,color=hblue,line width=1pt] gnuplot {
+plot './Green_hyb0.4E4_O11.5.dat' u 1:(-1/3.1415)*($3) w l;
+};  
+
+
+\addplot[dashed,raw gnuplot,color=hblue,line width=1pt] gnuplot {
+plot './neq_distr_f_filling_hyb0.4E4_O11.5.dat' u 1:3 w l;
+};  
+
+\addplot[solid,raw gnuplot,color=hred,line width=1pt] gnuplot {
+plot './Green_hyb0.4phE4_O11.5.dat' u 1:(-1/3.1415)*($3) w l;
+};
+
+
+\addplot[dashed,raw gnuplot,color=hred,line width=1pt] gnuplot {
+plot './neq_distr_f_filling_hyb0.4phE4_O11.5.dat' u 1:3 w l;
+};
+ 
+ 
+ \node[fill=none,scale=1.0] at (axis cs:-13.5,0.085) {\bfseries(a)};
+ \node[fill=none,scale=1.0] at (axis cs:11.5,0.085) {$v=0.4$};
+ 
+  
+  
+% 2° figure 
+
+\nextgroupplot[
+xmin=-15.,     
+xmax=15., 
+ymin=0.00, 
+ymax=0.09,   
+minor tick num=1, 
+% grid=both,
+xlabel={$\omega/t^{*}$},
+% ylabel={$A(\omega)/t^{*-1}$},
+legend style={at={(axis cs:-9.3,0.017)},anchor=north,mark options={scale=0.85},/tikz/every odd column/.append style={column sep=0.5mm},legend columns=1},
+legend cell align=left,
+clip mode=individual,
+clip marker paths=true, 
+xtick={-15,-10,-5,0,5,10,15},
+ytick={0.00,0.03,0.06,0.09},
+% yticklabels={\smash{\raisebox{0.1\height}{0}},0.002,0.004,0.006,0.008,0.01,0.012},
+% yticklabels={\smash{\raisebox{0.1\height}{0}},0.002,0.004,0.006,0.008,0.01,0.012,\smash{\raisebox{-0.8\height}{5}}},
+x tick label style={
+    /pgf/number format/.cd,
+    fixed,
+    fixed zerofill,
+    precision=0,
+    /tikz/.cd},
+y tick label style={
+    /pgf/number format/.cd,
+    fixed,
+    fixed zerofill,
+    precision=0,
+    /tikz/.cd}
+] 
+ 
+\addlegendimage{solid,color=hcoral,scale={1.0},line width=1pt}
+\addlegendentry{$el$};
+\addlegendimage{solid,color=hlime,scale={1.0},line width=1pt} 
+\addlegendentry{$el+ph$};
+
+
+% % % % % % % %  PLOTS  
+ 
+% \draw (axis cs:4,0) -- (axis cs:10,0.01);
+
+\addplot[solid,raw gnuplot,color=hcoral,line width=1pt] gnuplot {
+plot './Green_hyb0.8E4_O11.5.dat' u 1:(-1/3.1415)*($3) w l;
+};  
+
+
+\addplot[dashed,raw gnuplot,color=hcoral,line width=1pt] gnuplot {
+plot './neq_distr_f_filling_hyb0.8E4_O11.5.dat' u 1:3 w l;
+};  
+
+\addplot[solid,raw gnuplot,color=hlime,line width=1pt] gnuplot {
+plot './Green_hyb0.8phE4_O11.5.dat' u 1:(-1/3.1415)*($3) w l;
+};
+
+
+\addplot[dashed,raw gnuplot,color=hlime,line width=1pt] gnuplot {
+plot './neq_distr_f_filling_hyb0.8phE4_O11.5.dat' u 1:3 w l;
+};
+ 
+ 
+ \node[fill=none,scale=1.0] at (axis cs:-13.5,0.085) {\bfseries(b)};
+ \node[fill=none,scale=1.0] at (axis cs:11.5,0.085) {$v=0.8$};
+ 
+  
+     
+  
+
+\end{groupplot} 
+
+ \end{tikzpicture}
+
+\end{document}
