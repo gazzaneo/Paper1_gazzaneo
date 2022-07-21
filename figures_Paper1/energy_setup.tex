@@ -1,0 +1,239 @@
+\documentclass{standalone}
+
+\usepackage{braket}   % braket notation
+\usepackage{amsmath}  % math features
+\usepackage{bm}       % bold greek letters
+
+\usepackage{graphicx} % include images
+\usepackage{xcolor}   % colors
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.13}
+\usetikzlibrary{math}
+\usetikzlibrary{calc}
+\usetikzlibrary{decorations.markings}
+\usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{positioning}
+\usetikzlibrary{fit}
+\usetikzlibrary{matrix}
+\usetikzlibrary{intersections}
+\usetikzlibrary{bending}
+\usepgfplotslibrary{fillbetween}
+
+\pgfmathsetmacro{\PI}{3.141592654}
+
+\renewcommand{\vec}[1]{\bm{#1}} % vectors in bold
+\newcommand{\mat}[1]{\bm{#1}} % matrices in bold
+\DeclareMathOperator*{\Tr}{Tr} % trace
+\DeclareMathOperator{\TT}{T} % time-ordering operator
+\DeclareMathOperator*{\RRe}{Re} % real part
+\DeclareMathOperator*{\IIm}{Im} % real part
+\DeclareMathOperator*{\sgn}{sgn} % sign function
+\DeclareMathOperator*{\dd}{d} % differential
+\DeclareMathOperator*{\ii}{i} % imaginary unit
+\DeclareMathOperator*{\const}{const.} % constant
+\DeclareMathOperator*{\DD}{D} % differential operator
+\DeclareMathOperator*{\stat}{stat} % stationary
+\DeclareMathOperator*{\sad}{sad} % saddlepoint
+\DeclareMathOperator*{\linspan}{linspan} % saddlepoint
+\newcommand{\irchi}[2]{\raisebox{\depth}{$#1\chi$}}      % inline chi
+\DeclareRobustCommand{\rchi}{{\mathpalette\irchi\relax}}
+\newcommand{\irpsi}[2]{\raisebox{\depth}{$#1\psi$}}      % inline psi
+\DeclareRobustCommand{\rpsi}{{\mathpalette\irpsi\relax}}
+\newcommand{\equalhat}{\mathrel{\stackon[1.5pt]{=}{\stretchto{%
+    \scalerel*[\widthof{=}]{\wedge}{\rule{1ex}{3ex}}}{0.5ex}}}}
+    
+\definecolor{colorOne}{HTML}{323232}   % Anthrazit
+\definecolor{colorTwo}{HTML}{004191}   % Mittelblau
+\definecolor{colorThree}{HTML}{00BEFF} % Hellblau
+% Helper Colors
+\definecolor{hblue}{RGB}{0,112,255}    % Brandeis blue
+\definecolor{hred}{RGB}{199,44,72}     % raspberry red
+\definecolor{hgreen}{RGB}{50,205,50}   % lime green
+\definecolor{horange}{RGB}{255,127,0}  % orange
+\definecolor{hpurple}{RGB}{111,45,168} % grape
+\definecolor{hyellow}{RGB}{255,211,0}  % cyber yellow
+\definecolor{hgray}{HTML}{323232}      % anthrazit gray
+\definecolor{hbrown}{RGB}{128,70,27}   % russet brown
+
+% circled
+\DeclareRobustCommand\circled[1]{\tikz[baseline=(char.base),scale=0.3]{
+\node[shape=circle,draw,thick,inner sep=0.5pt,fill=white] (char) {#1};}}
+
+\tikzstyle directmin=[postaction={decorate,decoration={markings,
+    mark=at position .5 with {\arrow{stealth}}}}]
+\tikzstyle directed=[postaction={decorate,decoration={markings,
+    mark=at position .65 with {\arrow{stealth[color=black]}}}}]
+\tikzstyle bluedirected=[postaction={decorate,decoration={markings,
+    mark=at position .65 with {\arrow{stealth[color=hblue]}}}}]
+\tikzstyle reddirected=[postaction={decorate,decoration={markings,
+    mark=at position .65 with {\arrow{stealth[color=hred]}}}}]
+\tikzstyle flatdirected=[postaction={decorate,decoration={markings,
+    mark=at position .65 with {\arrow{Stealth[color=black,flex=0.75,length=5pt,width=10pt]}}}}]
+\tikzstyle directmax=[postaction={decorate,decoration={markings,
+    mark=at position .85 with {\arrow{stealth}}}}]
+
+\tikzset{
+    cheating dash/.code args={on #1 off #2}{
+        % Use csname so catcode of @ doesn't have do be changed.
+        \csname tikz@addoption\endcsname{%
+            \pgfgetpath\currentpath%
+            \pgfprocessround{\currentpath}{\currentpath}%
+            \csname pgf@decorate@parsesoftpath\endcsname{\currentpath}{\currentpath}%
+            \pgfmathparse{\csname pgf@decorate@totalpathlength\endcsname-#1}\let\rest=\pgfmathresult%
+            \pgfmathparse{#1+#2}\let\onoff=\pgfmathresult%
+            \pgfmathparse{max(floor(\rest/\onoff), 1)}\let\nfullonoff=\pgfmathresult%
+            \pgfmathparse{max((\rest-\onoff*\nfullonoff)/\nfullonoff+#2, #2)}\let\offexpand=\pgfmathresult%
+            \pgfsetdash{{#1}{\offexpand}}{0pt}}%
+    }
+}
+
+\begin{document}
+
+\begin{tikzpicture}[>=stealth]
+
+% Figure 1
+
+% \path[>=stealth,<->,shorten >=0.15cm,shorten <=0.15cm,out=-30,in=-150,line width=2pt] (2.5,0.5) edge (5,0.5);
+
+% \filldraw[fill=hblue!50!white,draw=hblue,xshift=-2cm,rotate=-90] (-1,0) parabola[bend pos=0.5] bend +(0,2) +(3,0) -- cycle;
+
+\path[>=stealth,<->,shorten >=0.5cm,shorten <=0.5cm,line width=2pt] (4.7,2.5) edge (4.7,5.5);
+
+\filldraw[draw=hred,fill=hred!20!white] (2.5,3) arc [start angle=-90, end angle=90,x radius=2cm, y radius=1cm] -- cycle;  
+
+\filldraw[draw=hgreen,fill=hgreen!20!white] (0,3) arc [start angle=-90, end angle=90,x radius=2cm, y radius=1cm] -- cycle;  % Hubbard bands as parabolas
+
+\path[>=stealth,line width=1pt] (2.5,2.75) edge (4.5,2.75);
+
+
+\path[>=stealth,<->,shorten >=0.5cm,shorten <=0.5cm,line width=2pt] (0,1.5) edge (0,3.5);
+
+
+\path[>=stealth,line width=1pt] (-2.5,2.25) edge (-0.5,2.25);
+
+\filldraw[draw=hgreen,fill=hgreen!20!white] (0,0) arc [start angle=-90, end angle=90,x radius=2cm, y radius=1cm] -- cycle;  % Hubbard bands as parabolas
+
+\filldraw[draw=hred,fill=hred!20!white] (-2.5,0) arc [start angle=-90, end angle=90,x radius=2cm, y radius=1cm] -- cycle;  
+
+\path[>=stealth,<->,shorten >=0.5cm,shorten <=0.5cm,line width=2pt] (-2.7,-0.5) edge (-2.7,2.5);
+
+
+
+
+% text 
+ 
+\node at (3.5,4) [minimum size = 0.1 cm]{\textcolor{hred}{r-bath}}; 
+\node at (1,4) [minimum size = 0.1 cm]{\textcolor{hgreen}{UH band}};
+\node at (1,1) [minimum size = 0.1 cm]{\textcolor{hgreen}{LH band}};
+\node at (-1.5,1) [minimum size = 0.1 cm]{\textcolor{hred}{l-bath}};
+
+\node at (5.1,4) {\textcolor{black}{$W_{b}$}};
+
+\node at (3.5,2.6) {\textcolor{black}{$\mu_r$}};  
+\node at (-1.5,2.4) {\textcolor{black}{$\mu_l$}};
+
+\node at (-3.1,1) {\textcolor{black}{$W_{b}$}};
+
+\node at (1,2.5) {\textcolor{black}{$\Delta_{\textrm{eff}}$/$\Delta_{\textrm{eff,ph}}$}};
+
+\node at (-2.7,5) {\bfseries(a)};
+
+
+% Figure 2
+
+
+\filldraw[draw=hred,fill=hred!20!white] (2.5,-3) arc [start angle=-90, end angle=90,x radius=2cm, y radius=1cm] -- cycle;  
+
+\filldraw[draw=hgreen,fill=hgreen!20!white] (0,-3) arc [start angle=-90, end angle=90,x radius=2cm, y radius=1cm] -- cycle;  % Hubbard bands as parabolas
+
+
+
+\draw [->,>=Stealth,line width=1pt,decorate,decoration={snake,amplitude=0.2cm,segment length=0.4cm,pre length=0.4cm,post length=0.4cm},draw=hyellow] (-2.5,-2.5) -- (0,-3.5);
+
+
+\filldraw[draw=hgreen,fill=hgreen!20!white] (0,-6) arc [start angle=-90, end angle=90,x radius=2cm, y radius=1cm] -- cycle;  % Hubbard bands as parabolas
+
+\filldraw[draw=hred,fill=hred!20!white] (-2.5,-6) arc [start angle=-90, end angle=90,x radius=2cm, y radius=1cm] -- cycle;  
+
+
+
+% text 
+ 
+\node at (3.5,-2) [minimum size = 0.1 cm]{\textcolor{hred}{r-bath}}; 
+\node at (1,-2) [minimum size = 0.1 cm]{\textcolor{hgreen}{UH band}};
+\node at (1,-5) [minimum size = 0.1 cm]{\textcolor{hgreen}{LH band}};
+\node at (-1.5,-5) [minimum size = 0.1 cm]{\textcolor{hred}{l-bath}};
+
+\node at (-1,-2.7) {\textcolor{hyellow}{$\Omega$}};
+
+\node at (-2.7,-1) {\bfseries(b)};
+
+
+\draw[dotted,color=black,fill=white] (0.5,-5) circle[radius=3pt];
+
+\path[color=hyellow,>=stealth,->,shorten >=0.15cm,shorten <=0.15cm,out=120,in=210,line width=1pt] (0.5,-5) edge (0.8,-2);
+
+\draw[color=black,fill=hgreen] (0.8,-2.1) circle[radius=3pt];
+
+\path[color=hred,>=stealth,->,shorten >=0.15cm,shorten <=0.15cm,out=-30,in=-150,line width=1pt] (0.8,-2.2) edge (3.2,-2); 
+
+
+% Figure 3
+
+
+\filldraw[draw=hred,fill=hred!20!white] (2.5,-9) arc [start angle=-90, end angle=90,x radius=2cm, y radius=1cm] -- cycle;  
+
+\filldraw[draw=hgreen,fill=hgreen!20!white] (0,-9) arc [start angle=-90, end angle=90,x radius=2cm, y radius=1cm] -- cycle;  % Hubbard bands as parabolas
+
+
+
+\draw [->,>=Stealth,line width=1pt,decorate,decoration={snake,amplitude=0.2cm,segment length=0.4cm,pre length=0.4cm,post length=0.4cm},draw=hyellow] (-2.5,-8.5) -- (-0.2,-9.5);
+
+
+\filldraw[draw=hgreen,fill=hgreen!20!white] (0,-12) arc [start angle=-90, end angle=90,x radius=2cm, y radius=1cm] -- cycle;  % Hubbard bands as parabolas
+
+\filldraw[draw=hred,fill=hred!20!white] (-2.5,-12) arc [start angle=-90, end angle=90,x radius=2cm, y radius=1cm] -- cycle;  
+
+
+
+% text 
+ 
+\node at (3.5,-8) [minimum size = 0.1 cm]{\textcolor{hred}{r-bath}}; 
+\node at (1,-8) [minimum size = 0.1 cm]{\textcolor{hgreen}{UH band}};
+\node at (1,-11) [minimum size = 0.1 cm]{\textcolor{hgreen}{LH band}};
+\node at (-1.5,-11) [minimum size = 0.1 cm]{\textcolor{hred}{l-bath}};
+
+\node at (-1,-8.7) {\textcolor{hyellow}{$\Omega$}};
+
+\node at (-2.7,-7) {\bfseries(c)};
+
+
+\draw[dotted,color=black,fill=white] (0.5,-11.3) circle[radius=3pt];
+
+\path[color=hyellow,>=stealth,->,shorten >=0.15cm,shorten <=0.15cm,out=120,in=240,line width=1pt] (0.5,-11.3) edge (0.4,-7.2);
+
+\draw[dotted,color=black,fill=white] (0.4,-7.3) circle[radius=3pt];
+
+\path[>=stealth,->,shorten >=0.15cm,shorten <=0.15cm,out=-60,in=-180,line width=1pt] (0.4,-7.3) edge (1.6,-8);
+
+\draw[color=black,fill=hgreen] (1.6,-8) circle[radius=3pt];
+
+\path[color=hred,>=stealth,->,shorten >=0.15cm,shorten <=0.15cm,out=30,in=150,line width=1pt] (1.6,-8) edge (3.6,-8);
+
+\draw[dotted,color=black,fill=white] (0.9,-10.3) circle[radius=3pt];
+
+\path[>=stealth,->,shorten >=0.15cm,shorten <=0.15cm,out=120,in=-150,line width=1pt] (0.9,-10.3) edge (0.7,-8.8);
+
+\draw[color=black,fill=hgreen] (0.67,-8.75) circle[radius=3pt];
+
+\path[color=hred,>=stealth,->,shorten >=0.15cm,shorten  <=0.15cm,out=-30,in=210,line width=1pt] (0.7,-8.7) edge (3.6,-8.4);
+
+% \path[>=stealth,->,shorten >=0.15cm,shorten <=0.15cm,out=-30,in=-150,line width=1pt] (0.8,-2.2) edge (3.2,-2);
+
+
+
+\end{tikzpicture}
+
+\end{document}

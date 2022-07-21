@@ -1,0 +1,267 @@
+\documentclass[10pt]{standalone}
+\usepackage[english]{babel} % language
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+
+%%%%%%%%%%%%
+% PGFPLOTS %
+%%%%%%%%%%%%
+\usepackage{pgfplots}    % pgfplots
+\usepackage{tikz-3dplot} % 3D coordinate frames
+%\usepackage{gnuplot-lua-tikz}
+\usepgfplotslibrary{fillbetween}
+\usepgfplotslibrary{colormaps}
+\pgfplotsset{compat=1.17}
+% \pgfplotsset{trig format plots=rad}
+
+%%%%%%%%%%%%%%%%% 
+% TikZ packages %
+%%%%%%%%%%%%%%%%%
+\usetikzlibrary{math}
+\usetikzlibrary{calc}
+\usetikzlibrary{decorations.markings}
+\usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{positioning}
+\usetikzlibrary{fit}
+\usetikzlibrary{matrix}
+\usetikzlibrary{intersections}
+\usetikzlibrary{bending}
+\usetikzlibrary{pgfplots.groupplots}
+
+\usepackage{xcolor}
+\usepackage{braket}
+
+% alternative
+%\definecolor{hturquoise}{RGB}{0,206,209}   %turquoise
+%\definecolor{hred}{RGB}{255,0,0}             % red 
+%\definecolor{hbrown}{RGB}{128,70,27}    % russet brown
+%\definecolor{hpurple}{RGB}{111,45,168} % grape
+%\definecolor{hyellow}{RGB}{255,255,0}   % yellow
+\definecolor{hgray}{HTML}{323232}      % anthrazit gray
+%\definecolor{hgreen}{RGB}{50,205,50}   % dark lime green 
+%\definecolor{hmagenta}{RGB}{255,0,255}   % magenta
+
+\definecolor{hcoral}{RGB}{255,127,80}     % coral
+\definecolor{hblue}{RGB}{0,112,255}        % Brandeis blue
+\definecolor{hred}{RGB}{199,44,72}         % raspberry red
+\definecolor{hlime}{RGB}{0,255,0}            % lime green
+\definecolor{hyellow}{RGB}{255,211,0}     % cyber yellow
+\definecolor{hcyan}{RGB}{0,255,255}       % bright cyan
+ 
+
+\DeclareMathAlphabet{\pazocal}{OMS}{zplm}{m}{n}
+\newcommand{\capcali}{\pazocal{I}}
+\newcommand{\capcalr}{\pazocal{R}}
+
+\begin{document}
+
+\begin{tikzpicture}[>=Stealth] 
+
+% foreground, background 
+\pgfdeclarelayer{background}
+\pgfdeclarelayer{foreground}
+\pgfdeclarelayer{main} 
+\pgfsetlayers{background,main,foreground}
+
+\begin{groupplot}[
+group style={
+group size=2 by 1,
+xticklabels at=edge bottom, 
+%yticklabels at=edge left,
+%vertical sep=10pt,
+horizontal sep=30pt 
+}, 
+minor tick num=1, 
+width=0.6\textwidth,
+height=0.6\textwidth    
+] 
+ 
+% 1° figure
+
+\nextgroupplot[
+xmin=3.,    
+xmax=21., 
+ymin=0.000, 
+ymax=0.013,   
+minor tick num=1, 
+grid=both,
+xlabel={$\Omega/t^{*}$},
+ylabel={$j/j_0$},
+legend style={at={(axis cs:19.5,0.014)},anchor=north,mark options={scale=1.0},/tikz/every odd column/.append style={column sep=0.5mm},legend columns=1},
+legend cell align=left,
+clip mode=individual,
+clip marker paths=true, 
+xtick={3,5,7,9,11,13,15,17,19,21},
+ytick={0.000,0.003,0.006,0.009,0.012},
+% yticklabels={\smash{\raisebox{0.1\height}{0}},0.002,0.004,0.006,0.008,0.01,0.012},
+% yticklabels={\smash{\raisebox{0.1\height}{0}},0.002,0.004,0.006,0.008,0.01,0.012,\smash{\raisebox{-0.8\height}{5}}},
+x tick label style={
+    /pgf/number format/.cd,
+    fixed,
+    fixed zerofill,
+    precision=0, 
+    /tikz/.cd}, 
+y tick label style={
+    /pgf/number format/.cd,
+    fixed,
+    fixed zerofill,
+    precision=1,
+    /tikz/.cd}
+] 
+
+% \addlegendimage{solid,color=hblue,scale={1.0},line width=1pt}
+% \addlegendentry{$el,v=0.5$};
+% \addlegendimage{dashed,color=hblue,scale={1.0},line width=1pt}
+% \addlegendentry{$el+ph,v=0.5$};
+% \addlegendimage{solid,color=hred,scale={1.0},line width=1pt}
+% \addlegendentry{$el,v=0.6$};
+% \addlegendimage{dashed,color=hred,scale={1.0},line width=1pt}
+% \addlegendentry{$el+ph,v=0.6$};
+% \addlegendimage{solid,color=hcoral,scale={1.0},line width=1pt}
+% \addlegendentry{$el,v=0.7$};
+% \addlegendimage{dashed,color=hcoral,scale={1.0},line width=1pt}
+% \addlegendentry{$el+ph,v=0.7$};
+
+% \addplot +[dashed,very thin,color=hblue,mark=none] coordinates {(-2.55, 0.0) (-2.55, 0.035)};
+% \addplot +[dashed,very thin,color=hblue,mark=none] coordinates {(0.525, 0.0) (0.525, 0.035)};
+% \draw [stealth-stealth,thick,color=hblue](-2.55, 0.015) -- (0.525, 0.015);
+
+% \addplot +[dashed,very thin,color=hred,mark=none] coordinates {(2.55, 0.0) (2.55, 0.035)};
+% \addplot +[dashed,very thin,color=hred,mark=none] coordinates {(-0.525, 0.0) (-0.525, 0.035)};
+% \draw [stealth-stealth,thick,color=hred](2.55, 0.02) -- (-0.525, 0.02);
+
+% \draw [-stealth,thick,color=hgray](0.35, 0.0055) -- (0.45, 0.004);
+% \draw [-stealth,thick,color=hgray](-0.35, 0.0055) -- (-0.45, 0.004);
+
+% \draw [-stealth,thick,color=hgray](2.0, 0.0045) -- (2.2, 0.003);
+% \draw [-stealth,thick,color=hgray](-2.0, 0.0045) -- (-2.2, 0.003);
+
+
+% % % % % % % %  PLOTS 
+
+% \draw (axis cs:4,0) -- (axis cs:10,0.01);
+
+\addplot[solid,raw gnuplot,color=hblue,line width=1pt] gnuplot {
+plot './mu1hyb0.4ph_omegaph0.025_E2.dat' u 5:8 w l;
+};
+ 
+\addplot[dashed,raw gnuplot,color=hblue,line width=1pt] gnuplot {
+plot './mu1hyb0.4ph_omegaph0.05_E2.dat' u 5:8 w l;
+};
+
+\addplot[solid,raw gnuplot,color=hred,line width=1pt] gnuplot {
+plot './mu1hyb0.8ph_omegaph0.025_E2.dat' u 5:8 w l;
+};
+ 
+\addplot[dashed,raw gnuplot,color=hred,line width=1pt] gnuplot {
+plot './mu1hyb0.8ph_omegaph0.05_E2.dat' u 5:8 w l;
+};
+
+
+
+
+% \node[fill=none,color=hblue,scale={1.0}] at (axis cs:-1.20,0.017){$F$};
+% \node[fill=none,color=hred,scale={1.0}] at (axis cs:1.20,0.022){$F$};
+\node[fill=none,scale=1.0] at (axis cs:4.,0.0122) {\bfseries(a)};
+ 
+ 
+%  2° figure 
+ 
+\nextgroupplot[
+xmin=3.,   
+xmax=21., 
+ymin=0.00, 
+ymax=0.06,   
+minor tick num=1, 
+grid=both,
+xlabel={$\Omega/t^{*}$},
+ylabel={$N_{D}$},
+legend style={at={(axis cs:12,0.024)},anchor=north,mark options={scale=1.0},/tikz/every odd column/.append style={column sep=0.5mm},legend columns=1},
+legend cell align=left,
+clip mode=individual,
+clip marker paths=true, 
+xtick={3,5,7,9,11,13,15,17,19,21},
+ytick={0.00,0.02,0.04,0.06},
+% yticklabels={\smash{\raisebox{0.1\height}{0}},0.02,0.04,0.06},
+% yticklabels={\smash{\raisebox{0.1\height}{0}},0.002,0.004,0.006,0.008,0.01,0.012,\smash{\raisebox{-0.8\height}{5}}},
+x tick label style={
+    /pgf/number format/.cd,
+    fixed,
+    fixed zerofill,
+    precision=0,
+    /tikz/.cd},
+y tick label style={
+    /pgf/number format/.cd,
+    fixed,
+    fixed zerofill,
+    precision=0,
+    /tikz/.cd}
+] 
+
+\addlegendimage{solid,color=hblue,scale={1.0},line width=1pt}
+\addlegendentry{$v=0.4, \omega_{ph}=0.025$};
+\addlegendimage{dashed,color=hblue,scale={1.0},line width=1pt}
+\addlegendentry{$v=0.4, \omega_{ph}=0.05$};
+\addlegendimage{solid,color=hred,scale={1.0},line width=1pt}
+\addlegendentry{$v=0.8, \omega_{ph}=0.025$};
+\addlegendimage{dashed,color=hred,scale={1.0},line width=1pt}
+\addlegendentry{$v=0.8, \omega_{ph}=0.05$};
+
+
+% \addplot +[dashed,very thin,color=hblue,mark=none] coordinates {(-2.55, 0.0) (-2.55, 0.035)};
+% \addplot +[dashed,very thin,color=hblue,mark=none] coordinates {(0.525, 0.0) (0.525, 0.035)};
+% \draw [stealth-stealth,thick,color=hblue](-2.55, 0.015) -- (0.525, 0.015);
+
+% \addplot +[dashed,very thin,color=hred,mark=none] coordinates {(2.55, 0.0) (2.55, 0.035)};
+% \addplot +[dashed,very thin,color=hred,mark=none] coordinates {(-0.525, 0.0) (-0.525, 0.035)};
+% \draw [stealth-stealth,thick,color=hred](2.55, 0.02) -- (-0.525, 0.02);
+
+% \draw [-stealth,thick,color=hgray](0.35, 0.0055) -- (0.45, 0.004);
+% \draw [-stealth,thick,color=hgray](-0.35, 0.0055) -- (-0.45, 0.004);
+
+% \draw [-stealth,thick,color=hgray](2.0, 0.0045) -- (2.2, 0.003);
+% \draw [-stealth,thick,color=hgray](-2.0, 0.0045) -- (-2.2, 0.003);
+
+
+% % % % % % % %  PLOTS 
+
+% \draw (axis cs:4,0) -- (axis cs:10,0.01);
+
+\addplot[solid,raw gnuplot,color=hblue,line width=1pt] gnuplot {
+plot './mu1hyb0.4ph_omegaph0.025_E2.dat' u 5:9 w l;
+};
+ 
+\addplot[dashed,raw gnuplot,color=hblue,line width=1pt] gnuplot {
+plot './mu1hyb0.4ph_omegaph0.05_E2.dat' u 5:9 w l;
+};
+
+\addplot[solid,raw gnuplot,color=hred,line width=1pt] gnuplot {
+plot './mu1hyb0.8ph_omegaph0.025_E2.dat' u 5:9 w l;
+};
+ 
+\addplot[dashed,raw gnuplot,color=hred,line width=1pt] gnuplot {
+plot './mu1hyb0.8ph_omegaph0.05_E2.dat' u 5:9 w l;
+};
+
+
+% \node[fill=none,color=hblue,scale={1.0}] at (axis cs:-1.20,0.017){$F$};
+% \node[fill=none,color=hred,scale={1.0}] at (axis cs:1.20,0.022){$F$};
+\node[fill=none,scale=1.0] at (axis cs:4.,0.057) {\bfseries(b)};
+
+
+
+
+% \node[fill=none,color=hblue,scale={1.0}] at (axis cs:3.0,0.0325){$F$};
+% \node[fill=none,color=hred,scale={1.0}] at (axis cs:-3.0,0.0275){$F$};
+
+% \node[fill=none,scale=1.0] at (axis cs:5.25,0.057) {\bfseries(b)};
+
+ 
+
+\end{groupplot} 
+ 
+\end{tikzpicture}
+
+\end{document}
