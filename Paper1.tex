@@ -248,9 +248,8 @@ To correctly describe the nonequilibrium periodic steady state, we use the Floqu
 \label{eq:FloquetGF} 
 \underline{G}_{mn}(\omega) =\int \dd t_{\text{rel}} \int_{-\tau/2}^{\tau/2} \frac{dt_{\text{av}}}{\tau} \ee^{\ii[\left(\omega+m\Omega\right) t -\left( \omega+n\Omega\right)t^{\prime}]} \underline{G}(t,t'),
 \end{equation}
-
 known as the \emph{Keldysh-Floquet} GF. The integration variables $t_{\text{rel}} = t-t^{\prime}$ and $t_{\text{av}} = (t+t^{\prime})/2$ are the relative and average times. Within the rest of this work, we denote a Floquet-represented matrix either as $X_{mn}$ with explicit indices, or use a boldface letter $\bf{X}$. The underline indicates the overall \emph{Keldysh} structure
-
+%
 \begin{equation}\label{eq:Keld-structure}
 \underline{{\bf G}} \equiv 
 \begin{pmatrix}
@@ -258,7 +257,7 @@ known as the \emph{Keldysh-Floquet} GF. The integration variables $t_{\text{rel}
 {\bf 0}         & {\bf G}^{\text{A}} \\
 \end{pmatrix},
 \end{equation}
-
+%
 which contains the \emph{retarded}, \emph{advanced} and \emph{Keldysh} components $\textbf{G}^{\text{R,A,K}}$, where $\textbf{G}^{\text{A}}=(\textbf{G}^{\text{R}})^{\dagger}$. The \emph{Keldysh} component is defined as $\textbf{G}^{\text{K}} \equiv \textbf{G}^{>} + \textbf{G}^{<}$, with $\textbf{G}^{\lessgtr}$ as \emph{lesser} and \emph{greater} components~\cite{schw.61,keld.65,ra.sm.86,ha.ja}.
   
 \subsection{Dyson equation} 
@@ -275,18 +274,17 @@ Therein, the lattice GF of the non-interacting part of the Hamiltonian in Eq.~\e
 \begin{equation}\label{eq:non-int_InvGF} 
 \underline{G}^{-1}_{0,mn}(\omega_n;\epsilon,\overline{\epsilon}) =  \underline{g}^{-1}_{0,mn}(\omega_n;\epsilon,\overline{\epsilon}) - \sum_{\rho\in\{\text{l},\text{r}\}}v^2_{\rho}\underline{g}_{\text{b},\rho}(\omega_n;\epsilon)\delta_{mn}
 \end{equation}
-
 with $v_{\text{l}/\text{r}}$ as lead-layer hybridization, $\omega_n \equiv \omega + n\Omega$, $n\in\mathbbm{Z}$, and 
-
+%
 \begin{equation}\label{eq:inv_non-int_lat_GF_comps}
 \begin{split}
 \left[ g^{-1}_{0}(\omega_n;\epsilon,\overline{\epsilon})) \right]^{\text{R}}_{mn} & = \left( \omega_n + i0^{+} -\varepsilon_{\text{c}} \right)\delta_{mn} - \varepsilon_{mn}(\epsilon,\overline{\epsilon}), \\
 \left[ g^{-1}_{0}(\omega_n;\epsilon,\overline{\epsilon})) \right]^{\text{K}}_{mn} & = 0
 \end{split}
 \end{equation}
-
+%
 as the noninteracting Green's function of the isolated layer, whose inverse Keldysh component is negligible in the steady state. The Floquet dispersion relation $\varepsilon_{mn}$ for the periodic field in a hyper-cubic lattice is~\cite{ts.ok.08} 
-
+%
 \begin{equation}
 \label{eq:Floquet_disp}
 \varepsilon_{mn}(\epsilon,\overline{\epsilon}) = \begin{cases}
@@ -296,12 +294,12 @@ as the noninteracting Green's function of the isolated layer, whose inverse Keld
 \end{equation} 
 % 
 where $J_n$ denotes the $n$-th order Bessel function of the first kind, with the argument $\aamp$ defined in Sec.~\ref{sec:Model}. The  GF $\underline{g}_{\text{b},\text{l}/\text{r}}$ on the $d$-dimensional boundary of the decoupled leads,  consisting of a single layer coupled to a semi-infinite reservoir in the wide-band limit with broadening $\Gamma_{\text{l}/\text{r}}$ (cf. Fig.~\ref{fig:setup}) is given by
-  
+%  
 \begin{align}
 g^{\text{R}}_{\text{b},\text{l}/\text{r}}(\omega;\epsilon) &= \frac{1}{\omega-\varepsilon_{\text{l}/\text{r}}(\epsilon)+\ii\Gamma_{\text{l}/\text{r}}},\label{eq:retarded_bath_GF} \\
 g^{\text{K}}_{\text{b},\text{l}/\text{r}}(\omega;\epsilon) &= 2\ii \iim[g_{\text{b},\text{l}/\text{r}}^{\text{R}}(\omega;\epsilon)][1-2f(\omega,\mu_{\text{l}/\text{r}},\beta)], \label{eq:keldysh_bath_GF}
 \end{align} 
-
+%
 where $\varepsilon_{\text{l}/\text{r}}(\epsilon)=\varepsilon_{\text{l}/\text{r}} +\frac{t_{\text{l}/\text{r}}}{t^\ast}\epsilon$ is the dispersion, $f(\omega,\mu_{\text{l}/\text{r}},\beta)=1/[\ee^{\beta(\omega-\mu_{\text{l}/\text{r}})}+1]$ the Fermi-Dirac distribution function at inverse temperature $\beta \equiv 1/T$, $\varepsilon_{\text{l}/\text{r}}$ the onsite energy and $t_{\text{l}/\text{r}}$ the hopping within the $d$-dimensional layer of the lead.  
 
 The electron self-energy (SE) $\underline{\bf{\Sigma}}$ is obtained from F-DMFT and therefore independent of the crystal momentum, i.e. $\underline{\bf{\Sigma}}(\omega;\epsilon,\overline{\epsilon}) \simeq \underline{\bf{\Sigma}}(\omega)$. Further details are given in Sec.~\ref{sec:FDMFT_implementation}. 
@@ -313,6 +311,7 @@ The e-ph SE is also included locally as $\underline{\bf{\Sigma}}_{\text{e-ph}}(\
 \end{equation}
  
 The Keldysh components of the non-interacting phonon GF $\kel{D}_{\text{ph}}(t,t^{\prime})$ are given by~\cite{ao.ts.14}
+%
 \begin{align}\label{eq:Ph_Prop_time}
 \begin{split} 
 D^{\text{R}}_{\text{ph}}(t,t^{\prime}) & = -\ii \theta(t-t^{\prime}) \int \dd\omega \ \ee^{-\ii\omega\left(t-t^{\prime}\right)} A_{\text{ph}}(\omega), \\
@@ -320,6 +319,7 @@ D^{>}_{\text{ph}}(t,t^{\prime}) & = -\ii \int \dd\omega \ \ee^{-\ii\omega\left(t
 D^{<}_{\text{ph}}(t,t^{\prime}) & = -\ii \int \dd\omega \ \ee^{-\ii\omega\left(t-t^{\prime}\right)} A_{\text{ph}}(\omega) \ b(\omega), \\
 \end{split}, 
 \end{align}
+%
 where $b(\omega)=1/(\ee^{\beta\omega}-1)$ is the Bose-Einstein distribution function at inverse temperature $\beta$. We focus on acoustic phonons, with spectral function $A_{\text{ph}}(\omega) = (\omega/\omega^{2}_{\text{ph}}) \ee^{-| \omega|/\omega_{\text{ph}}}$,  $\omega_{\text{ph}}$ being a soft cutoff frequency~\cite{pi.li.21}. The retarded and Keldysh components of the e-ph SE are easily extracted from  Eq.~\eqref{eq:backbone_e-ph_SE} and can be found in Ref.~\cite{ma.ga.22u}.
      
 \subsection{Floquet DMFT} 
@@ -329,25 +329,25 @@ We compute the electron SE in the Dyson Equation~\eqref{eq:FullDysonEq} using DM
 
 We briefly describe now the self-consistent F-DMFT scheme used.
 (i) We start from an initial guess for the electron SE $\kel{\mat{\Sigma}}(\omega)$ and set $\kel{\mat \Sigma}_{\text{e-ph}}(\omega)=0$. (ii) Then we compute the local electron GF as 
-
+%  
 \begin{equation}\label{eq:Lat_LocGF}
 \begin{split}
 \kel{\mat G}_{\text{loc}}(\omega) &= \int \dd\epsilon \int \dd\overline{\epsilon} \ \rho(\epsilon,\overline{\epsilon}) \times \\ 
 &\times \left[\kel{\mat G}^{-1}_{0}(\omega,\epsilon,\overline{\epsilon}) - \kel{\mat\Sigma}(\omega) - \kel{\mat \Sigma}_{\text{e-ph}}(\omega) \right]^{-1}.
 \end{split}
 \end{equation}
- 
+% 
 (iii) Using Eq.~\eqref{eq:backbone_e-ph_SE}, we obtain the phonon contribution to the SE $\kel{\mat{\Sigma}}_{\text{e-ph}}(\omega)$.
 (iv) The problem is mapped onto a single impurity plus bath, whose hybridization function
 is given by
- 
+%
 \begin{equation}\label{eq:imp_Dyson_eq}
 \kel{\mat{\Delta}}(\omega) = \kel{\mat{g}}^{-1}_{0,\text{site}}(\omega) - \kel{\mat{G}}^{-1}_{\text{loc}}(\omega) - \kel{\mat{\Sigma}}(\omega),
-\end{equation}
- 
+\end{equation}   
+%  
 where $\kel{\mat{g}}^{-1}_{0,\text{site}}(\omega)$ is defined as in Eq.~\eqref{eq:inv_non-int_lat_GF_comps} with $\varepsilon_{mn}(\epsilon,\overline{\epsilon})=0$. (v) The nonequilibrium many-body impurity problem is solved according to the procedure in Sec.~\ref{sec:amea}, leading to the new
  $\kel{\mat{\Sigma}}(\omega)$. (vi) We insert the electron and e-ph SEs into step (ii) and iterate the steps (ii)-(vi) until convergence.
-
+ 
 \subsubsection{Floquet-diagonal self-energy approximation}
 \label{sec:FDSA} 
  
@@ -407,7 +407,7 @@ In order to study II in a Mott insulating layer, we set the bands to achieve the
   
 Due to the hybridization with the leads, the local DOS of the Hubbard layer only features a pseudogap
  $\Delta_{\text{pg}} \approx 4$.
-All simulations are carried out with the dimensionless factor $\alpha\equiv t_{r}E_0/\Omega^{2}<0.5$ for which the FDSA is justified~\cite{so.do.18}\footnote{In Ref.~\cite{so.do.18} the factor is defined as $\alpha=t_{c}E_0/\Omega^{2}$ and $t_{\text{c}}=1$. Setting $t_{r}=1$, we define for consistency $\alpha$ as in the main text.} and first-order photon absorption processes are dominant. Whenever the electron-phonon interaction is switched on, we take $g=0.8$ and unless stated otherwise $\omega_{\text{ph}}=0.1$.
+All simulations are carried out with the dimensionless factor $\alpha\equiv t_{r}E_0/\Omega^{2}<0.5$ for which the FDSA is justified~\footnote{In Ref.~\cite{so.do.18} the factor is defined as $\alpha=t_{c}E_0/\Omega^{2}$ and $t_{\text{c}}=1$. Setting $t_{r}=1$, we define for consistency $\alpha$ as in the main text.} and first-order photon absorption processes are dominant. Whenever the electron-phonon interaction is switched on, we take $g=0.8$ and unless stated otherwise $\omega_{\text{ph}}=0.1$.
 
 After some preliminary considerations in Sec.~\ref{sec:explicative_scheme}, we will discuss the occurrence of II at different $v$ first without (Sec.~\ref{sec:E0_2_only_electrons}) and then with coupling to acoustic phonons (Sec.~\ref{sec:E0_2_electrons_phonons}). 
  
@@ -463,20 +463,20 @@ We start with the EO case without e-ph interaction and investigate the dependenc
 
 In Fig.~\ref{fig:j_vs_omega_mu1_v_0.4_0.8_eph}(a), the photocurrent $j$ increases as a function of the driving frequency $\Omega$ within the range $4\lesssim\Omega\lesssim8$ independent of the value of $v$. According to the discussion in Sec.~\ref{sec:scheme_only_electrons} (cf.  Fig.~\ref{fig:energy_setup}), this $\Omega$-range is expected to allow only for DEs. The current in this range  increases with increasing $v$. Similarly, the double occupation shown in Fig.~\ref{fig:j_vs_omega_mu1_v_0.4_0.8_eph}(b) increases as a function of the driving frequency~\footnote{Notice that the increase of $N_{\text{D}}$ in Fig.~\ref{fig:j_vs_omega_mu1_v_0.4_0.8_eph}(b) as compared to Ref.~\cite{so.do.18} is not as steep and large in magnitude. This is due to our setup, where every photoexcited carrier can escape to the right lead.}.
 
-For $\Omega\gtrsim8$, the current increases further until it reaches its peak at $\Omega\approx 11$.
-In this range both DE and II can occur. The height of the peak is approximately the same for both $v$, despite the lead-layer hybridizations differing by a factor of two. The double occupation in this range shows a similar behavior as the current for $v=0.4$ with a peak around $\Omega\approx 11$, while it exhibits a plateau for $v=0.8$.
-For $v=0.4$ the current curve is characterized by a substantial change in slope around $\Omega \approx 8$, which is absent for $v=0.8$.
- This, together with the comparable magnitude of the maxima at $\Omega\approx 11$ and the behavior of the double occupation strongly suggest that for $v=0.4$ a substantial number of II processes take place, while these are absent or negligible for $v=0.8$.
-Here,  the plateau in $N_{\text{D}}$ for $v=0.8$ suggests that photoexcited electrons arriving in the UHB quickly escape to the right fermionic lead and do not have time to induce II processes.
- 
-The spectral and occupation function shown in Fig.~\ref{fig:spec_filling_mu1_v_0.4_0.8_O_5_11_e} corroborate this hypothesis. For $\Omega=5$ in the DE range, the occupation function in the UHB is almost the same for both $v$, while for $\Omega=11$ where the peak in the current occurs, the occupation of the UHB for $v=0.4$ is substantially larger,  in line with the behavior of $N_{\text{D}}$.
-  
 \begin{figure}[b] 
 % \captionsetup{width=\textwidth}   
 \includegraphics[width=\linewidth]{./figures_Paper1/spec_filling_mu1_v_0.4_0.8_O_5_11_e.pdf}
 \caption{(Color online) Spectral function $A(\omega)$ (solid line) and occupation function $N(\omega)$ (shaded area) at (a) $\Omega=5$ and (b) $\Omega=11$ for $v=0.4$ and $0.8$ for the EO system. Default parameters are specified at the beginning of Sec.~\ref{sec:results}.}
 \label{fig:spec_filling_mu1_v_0.4_0.8_O_5_11_e}
 \end{figure} 
+
+For $\Omega\gtrsim8$, the current increases further until it reaches its peak at $\Omega\approx 11$.
+In this range both DE and II can occur. The height of the peak is approximately the same for both $v$, despite the lead-layer hybridizations differing by a factor of two. The double occupation in this range shows a similar behavior as the current for $v=0.4$ with a peak around $\Omega\approx 11$, while it exhibits a plateau for $v=0.8$.
+For $v=0.4$ the current curve is characterized by a substantial change in slope around $\Omega \approx 8$, which is absent for $v=0.8$.
+ This, together with the comparable magnitude of the maxima at $\Omega\approx 11$ and the behavior of the double occupation strongly suggest that for $v=0.4$ a substantial number of II processes take place, while these are absent or negligible for $v=0.8$.
+Here,  the plateau in $N_{\text{D}}$ for $v=0.8$ suggests that photoexcited electrons arriving in the UHB quickly escape to the right fermionic lead and do not have time to induce II processes.
+
+The spectral and occupation function shown in Fig.~\ref{fig:spec_filling_mu1_v_0.4_0.8_O_5_11_e} corroborate this hypothesis. For $\Omega=5$ in the DE range, the occupation function in the UHB is almost the same for both $v$, while for $\Omega=11$ where the peak in the current occurs, the occupation of the UHB for $v=0.4$ is substantially larger,  in line with the behavior of $N_{\text{D}}$.
 
 Finally, increasing $\Omega$ further, decreases the current and double occupation~\footnote{The current $j$ does not approach zero as expected for $\Omega>20$ because of the background current as discussed in Ref.~\cite{so.do.18}.}.
 
@@ -526,7 +526,7 @@ The increase of double occupation for the case with e-ph interaction
 (cf. Fig.~\ref{fig:j_vs_omega_mu1_v_0.4_0.8_eph}(b)-Fig.~\ref{fig:j_vs_omega_mu1_sweep_v_E0_2_eph}(b))
 coincides with the current suppression and is probably due to a stronger localization of photoexcited electrons in the UHB.
 
-\begin{figure}[b] 
+\begin{figure}[t] 
 % \captionsetup{width=\textwidth} 
 \includegraphics[width=\linewidth]{./figures_Paper1/j_vs_omega_mu1_sweep_v_E0_2_eph.pdf}
 \caption{(Color online) (a) Time-averaged steady-state current $j$ and (b) double occupancy $N_{\text{D}}$ as a function of $\Omega$, for $v=0.5,0.6,0.7$, without and with e-ph interaction. Default parameters are specified at the beginning of Sec.~\ref{sec:results}.} 
@@ -541,7 +541,7 @@ We investigated the influence of fermion leads and phonon dissipation on electro
 
 These results suggest that in systems where correlated layers are connected to metallic leads via weakly coupled single layers or molecules, II could contribute significantly to the photocurrent. From the experimental point of view, such setup is employed, for example, to bridge semiconductor quantum dots to reservoirs through small molecules~\cite{wa.mc.13,wa.bo.17} to extract hot photoexcited carriers~\cite{ti.ke.10,ca.wa.16}. Based on our results, moderate e-ph coupling does not suppress the photocurrent significantly and therefore in real materials, II could contribute to overcome the Schockley-Queisser limit~\cite{sh.qu.61}.
  
-Experimentally, the electric field amplitude considered in this paper is several orders of magnitude bigger than the sunlight one, however it is possible to achieve such amplitudes via THz pulses ~\cite{mu.we.18} ~\footnote{We do not consider smaller electric field amplitudes $E_0$ since DMFT only converges slowly for such a choice of parameters. Moreover, the observables' magnitude becomes comparable to our numerical precision.}. Moreover, in order to address the occurrence of II in realistic photovoltaic setups, one should extend such simplified model to multiorbital systems \cite{pe.be.19} in a multilayer setup, to model oxide heterostructures~\cite{as.bl.13,pe.be.19} where the correlated region consists of multiple layers and photoexcited carriers are separated via an electric field gradient. Another step forward would be to take into account the effect of impurity scattering and the feedback of the electrons onto the phonon dynamics with a self-consistent treatment.
+Experimentally, the electric field amplitude considered in this paper~\footnote{We do not consider smaller electric field amplitudes $E_0$ since DMFT only converges slowly for such a choice of parameters. Moreover, the observables' magnitude becomes comparable to our numerical precision.} is several orders of magnitude larger than that of the sunlight, however it is possible to achieve such amplitudes via THz pulses ~\cite{mu.we.18}. Moreover, in order to address the occurrence of II in realistic photovoltaic setups, one should extend such simplified model to multiorbital systems \cite{pe.be.19} in a multilayer setup, to model oxide heterostructures~\cite{as.bl.13,pe.be.19} where the correlated region consists of multiple layers and photoexcited carriers are separated via an electric field gradient. Another step forward would be to take into account the effect of impurity scattering and the feedback of the electrons onto the phonon dynamics with a self-consistent treatment.
  
 \section*{Acknowledgements}
 
