@@ -8,7 +8,7 @@
 \usepackage{xcolor}   % colors
 
 \usepackage{pgfplots}
-\pgfplotsset{compat=1.13}
+\pgfplotsset{compat=1.18}
 \usetikzlibrary{math}
 \usetikzlibrary{calc}
 \usetikzlibrary{decorations.markings}
@@ -93,145 +93,273 @@
 
 \begin{tikzpicture}[>=stealth]
 
+% compilation of figure raises warning: Dimension too large, since the axis environment
+% is clipped. This is warning can be ignored.
+\clip (-3.5,-12.3) -- (5.5,-12.3) -- (5.5,5.3) -- (-3.5,5.3) -- cycle;
+
 % Figure 1
+\begin{scope}
+% r-lead
+% \filldraw[draw=hred,fill=hred!20!white] (2.5,3) arc [start angle=-90, end angle=90,x radius=2cm, y radius=1cm] -- cycle;
+\fill[fill=hgreen!20!white] (0,3) -- (0,2) -- (0.2,1.99) arc [start angle=195, end angle=165,x radius=2cm, y radius=2cm] -- cycle;
+\draw[draw=hgreen] (0.2,1.99) arc [start angle=195, end angle=165,x radius=2cm, y radius=2cm];
+\draw[draw=hgreen] (0,2) -- (0,3);
+% UHB
+\fill[fill=hgreen!20!white] (0,3) arc [start angle=-90, end angle=90,x radius=2cm, y radius=1cm] -- cycle;  % Hubbard bands as parabolas
+\draw[draw=hgreen] (0,5) arc [start angle=90, end angle=-84.7,x radius=2cm, y radius=1cm]; 
+\draw[draw=hgreen] (0,3) -- (0,5);
+% \draw (0,4) -- (5,4);
+% LHB
+\fill[fill=hgreen!20!white] (0,0) arc [start angle=-90, end angle=90,x radius=2cm, y radius=1cm] -- cycle;  % Hubbard bands as parabolas
+\draw[draw=hgreen] (0,0) arc [start angle=-90, end angle=84.5,x radius=2cm, y radius=1cm];
+\draw[draw=hgreen] (0,0) -- (0,2);
+% \draw (-3,1) -- (3,1);
+% l-lead
+% \filldraw[draw=hred,fill=hred!20!white] (-2.5,0) arc [start angle=-90, end angle=90,x radius=2cm, y radius=1cm] -- cycle;
 
-% \path[>=stealth,<->,shorten >=0.15cm,shorten <=0.15cm,out=-30,in=-150,line width=2pt] (2.5,0.5) edge (5,0.5);
-
-% \filldraw[fill=hblue!50!white,draw=hblue,xshift=-2cm,rotate=-90] (-1,0) parabola[bend pos=0.5] bend +(0,2) +(3,0) -- cycle;
-
-\path[>=stealth,<->,shorten >=0.5cm,shorten <=0.5cm,line width=2pt] (4.7,2.5) edge (4.7,5.5);
-
-\filldraw[draw=hred,fill=hred!20!white] (2.5,3) arc [start angle=-90, end angle=90,x radius=2cm, y radius=1cm] -- cycle;  
-
-\filldraw[draw=hgreen,fill=hgreen!20!white] (0,3) arc [start angle=-90, end angle=90,x radius=2cm, y radius=1cm] -- cycle;  % Hubbard bands as parabolas
-
-\path[>=stealth,line width=1pt] (2.5,2.75) edge (4.5,2.75);
-
-
-\path[>=stealth,<->,shorten >=0.5cm,shorten <=0.5cm,line width=2pt] (0,1.5) edge (0,3.5);
+% r-lead width
+\path[>=stealth,<->,shorten >=0.5cm,shorten <=0.5cm,line width=2pt] (4.7,2.5) edge node[midway,right] {$W_{\text{b}}$} (4.7,5.5);
+% % chemical potential right
+% \draw[line width=1pt] (2.5,2.75) -- node[midway,below] {$\mu_{\text{r}}$} (4.5,2.75);
+%gap
+% \path[>=stealth,<->,shorten >=0.5cm,shorten <=0.5cm,line width=2pt] (0,1.5) edge node[midway,right] {$\Delta_{\text{eff}}$/$\Delta_{\text{eff},\text{ph}}$} (0,3.5);
+\path[>=stealth,<->,shorten >=0.5cm,shorten <=0.5cm,line width=2pt] (0.5,1.5) edge node[midway,right] {$\Delta_{\text{pg}}$} (0.5,3.5);
+% % chemical potential left
+% \draw[line width=1pt] (-2.5,2.25) -- node[midway,above] {$\mu_{\text{l}}$} (-0.5,2.25);
+% l-lead width
+\path[>=stealth,<->,shorten >=0.5cm,shorten <=0.5cm,line width=2pt] (-2.7,-0.5) edge node[midway,left] {$W_{\text{b}}$} (-2.7,2.5);
 
 
-\path[>=stealth,line width=1pt] (-2.5,2.25) edge (-0.5,2.25);
+% text
+\node at (3.5,4) [minimum size = 0.1 cm]{\textcolor{hred}{r-lead}}; 
+\node at (1,4) [minimum size = 0.1 cm]{\textcolor{hgreen}{UHB}};
+\node at (1,1) [minimum size = 0.1 cm]{\textcolor{hgreen}{LHB}};
+\node at (-1.8,1) [minimum size = 0.1 cm]{\textcolor{hred!20!white}{l-lead}};
 
-\filldraw[draw=hgreen,fill=hgreen!20!white] (0,0) arc [start angle=-90, end angle=90,x radius=2cm, y radius=1cm] -- cycle;  % Hubbard bands as parabolas
+\node at (-2.5,4.5) {\bfseries(a)};
+\end{scope}
 
-\filldraw[draw=hred,fill=hred!20!white] (-2.5,0) arc [start angle=-90, end angle=90,x radius=2cm, y radius=1cm] -- cycle;  
+% r-lead
+% (position of lead has to be set manually)
+\begin{axis}[%
+xmin=0,xmax=3.5,
+ymin=-5,ymax=5,
+xtick=\empty,
+ytick=\empty,
+axis line style={draw=none},
+scale=1,
+at={(2.5cm,1.15cm)}]
 
-\path[>=stealth,<->,shorten >=0.5cm,shorten <=0.5cm,line width=2pt] (-2.7,-0.5) edge (-2.7,2.5);
+\addplot[solid,domain=-5:2,hred,name path=spectrum,samples=200] ({1.*1.0^2/(x^2+1.0^2)},{x});
+\addplot[solid,domain=-5:2,hred,name path=occupation,samples=200] ({1.*1.0^2/(x^2+1.0^2)*1./(exp((x+2.2)/0.06)+1.)},{x});
+\path[name path=yaxis] (axis cs:0,-5) -- (axis cs:0,2);
 
+\addplot[fill=hred!20!white,domain=-5:2] fill between [of=spectrum and yaxis,soft clip={domain=-5:5}];
+\addplot[fill=hred!60!white,domain=-5:2] fill between [of=occupation and yaxis,soft clip={domain=-5:5}];
 
+\draw[line width=1pt] (axis cs:0,-2.2) -- node[midway,below] {$\mu_{\text{r}}$} (1,-2.2);
+\end{axis}
 
+% l-lead
+% (position of lead has to be set manually)
+\begin{axis}[%
+ymin=-5,ymax=5,
+xmin=0,xmax=3.5,
+xtick=\empty,
+ytick=\empty,
+axis line style={draw=none},
+scale=1,
+clip mode=individual,
+at={(-2.5cm,-1.85cm)}]
 
-% text 
- 
-\node at (3.5,4) [minimum size = 0.1 cm]{\textcolor{hred}{r-bath}}; 
-\node at (1,4) [minimum size = 0.1 cm]{\textcolor{hgreen}{UH band}};
-\node at (1,1) [minimum size = 0.1 cm]{\textcolor{hgreen}{LH band}};
-\node at (-1.5,1) [minimum size = 0.1 cm]{\textcolor{hred}{l-bath}};
+\addplot[solid,domain=-2:5,hred,name path=spectrum,samples=200] ({1.*1.0^2/(x^2+1.0^2)},{x});
+\addplot[solid,domain=-2:5,hred,name path=occupation,samples=200] ({1.*1.0^2/(x^2+1.0^2)*1./(exp((x-2.2)/0.06)+1.)},{x});
+\path[name path=yaxis] (axis cs:0,-2) -- (axis cs:0,5);
 
-\node at (5.1,4) {\textcolor{black}{$W_{b}$}};
+\addplot[fill=hred!20!white] fill between [of=spectrum and yaxis,soft clip={domain=-2:5}];
+\addplot[fill=hred!60!white] fill between [of=occupation and yaxis,soft clip={domain=-2:5}];
 
-\node at (3.5,2.6) {\textcolor{black}{$\mu_r$}};  
-\node at (-1.5,2.4) {\textcolor{black}{$\mu_l$}};
-
-\node at (-3.1,1) {\textcolor{black}{$W_{b}$}};
-
-\node at (1,2.5) {\textcolor{black}{$\Delta_{\textrm{eff}}$/$\Delta_{\textrm{eff,ph}}$}};
-
-\node at (-2.7,5) {\bfseries(a)};
+\draw[line width=1pt] (axis cs:0,2.2) -- node[midway,above] {$\mu_{\text{l}}$} (1,2.2);
+\end{axis}
 
 
 % Figure 2
+\begin{scope}[yshift=-6cm]
+% % r-lead
+% \filldraw[draw=hred,fill=hred!20!white] (2.5,3) arc [start angle=-90, end angle=90,x radius=2cm, y radius=1cm] -- cycle;  
+\fill[fill=hgreen!20!white] (0,3) -- (0,2) -- (0.2,1.99) arc [start angle=195, end angle=165,x radius=2cm, y radius=2cm] -- cycle;
+\draw[draw=hgreen] (0.2,1.99) arc [start angle=195, end angle=165,x radius=2cm, y radius=2cm];
+\draw[draw=hgreen] (0,2) -- (0,3);
+% UHB
+\fill[fill=hgreen!20!white] (0,3) arc [start angle=-90, end angle=90,x radius=2cm, y radius=1cm] -- cycle;  % Hubbard bands as parabolas
+\draw[draw=hgreen] (0,5) arc [start angle=90, end angle=-84.7,x radius=2cm, y radius=1cm]; 
+\draw[draw=hgreen] (0,3) -- (0,5);
+% LHB
+\fill[fill=hgreen!20!white] (0,0) arc [start angle=-90, end angle=90,x radius=2cm, y radius=1cm] -- cycle;  % Hubbard bands as parabolas
+\draw[draw=hgreen] (0,0) arc [start angle=-90, end angle=84.5,x radius=2cm, y radius=1cm];
+\draw[draw=hgreen] (0,0) -- (0,2);
+% % l-lead
+% \filldraw[draw=hred,fill=hred!20!white] (-2.5,0) arc [start angle=-90, end angle=90,x radius=2cm, y radius=1cm] -- cycle;
 
 
-\filldraw[draw=hred,fill=hred!20!white] (2.5,-3) arc [start angle=-90, end angle=90,x radius=2cm, y radius=1cm] -- cycle;  
+% text
+\node at (3.5,4) [minimum size = 0.1 cm]{\textcolor{hred}{r-lead}}; 
+\node at (1,4) [minimum size = 0.1 cm]{\textcolor{hgreen}{UHB}};
+\node at (1,1) [minimum size = 0.1 cm]{\textcolor{hgreen}{LHB}};
+\node at (-1.8,1) [minimum size = 0.1 cm]{\textcolor{hred!20!white}{l-lead}};
 
-\filldraw[draw=hgreen,fill=hgreen!20!white] (0,-3) arc [start angle=-90, end angle=90,x radius=2cm, y radius=1cm] -- cycle;  % Hubbard bands as parabolas
-
-
-
-\draw [->,>=Stealth,line width=1pt,decorate,decoration={snake,amplitude=0.2cm,segment length=0.4cm,pre length=0.4cm,post length=0.4cm},draw=hyellow] (-2.5,-2.5) -- (0,-3.5);
-
-
-\filldraw[draw=hgreen,fill=hgreen!20!white] (0,-6) arc [start angle=-90, end angle=90,x radius=2cm, y radius=1cm] -- cycle;  % Hubbard bands as parabolas
-
-\filldraw[draw=hred,fill=hred!20!white] (-2.5,-6) arc [start angle=-90, end angle=90,x radius=2cm, y radius=1cm] -- cycle;  
+\node at (-2.5,4.5) {\bfseries(b)};
 
 
+% processes
 
-% text 
- 
-\node at (3.5,-2) [minimum size = 0.1 cm]{\textcolor{hred}{r-bath}}; 
-\node at (1,-2) [minimum size = 0.1 cm]{\textcolor{hgreen}{UH band}};
-\node at (1,-5) [minimum size = 0.1 cm]{\textcolor{hgreen}{LH band}};
-\node at (-1.5,-5) [minimum size = 0.1 cm]{\textcolor{hred}{l-bath}};
+% particles
+\draw[dotted,color=black,fill=white] (0.5,1) circle[radius=3pt];
+\draw[color=black,fill=hgreen] (0.5,3.9) circle[radius=3pt];
+% driving
+\path[color=hyellow,>=stealth,->,shorten >=0.15cm,shorten <=0.15cm,out=140,in=-140,line width=1pt] (0.5,1) edge (0.5,3.9);
+\draw [->,>=Stealth,line width=1pt,decorate,decoration={snake,amplitude=0.2cm,segment length=0.4cm,pre length=0.4cm,post length=0.4cm},draw=hyellow] (-2.0,3.5) -- (-0.3,2.5);
+\node at (-1,3.5) {\textcolor{hyellow}{$\Omega$}};
+% escape
+\path[color=hred,>=stealth,->,shorten >=0.15cm,shorten <=0.15cm,out=-30,in=-150,line width=1pt] (0.5,3.9) edge (3.2,3.9);
 
-\node at (-1,-2.7) {\textcolor{hyellow}{$\Omega$}};
+\end{scope}
 
-\node at (-2.7,-1) {\bfseries(b)};
+% r-lead
+% (position of lead has to be set manually)
+\begin{axis}[%
+xmin=0,xmax=3.5,
+ymin=-5,ymax=5,
+xtick=\empty,
+ytick=\empty,
+axis line style={draw=none},
+scale=1,
+at={(2.5cm,-4.85cm)}]
 
+\addplot[solid,domain=-5:2,hred,name path=spectrum,samples=200] ({1.*1.0^2/(x^2+1.0^2)},{x});
+\addplot[solid,domain=-5:2,hred,name path=occupation,samples=200] ({1.*1.0^2/(x^2+1.0^2)*1./(exp((x+2.2)/0.06)+1.)},{x});
+\path[name path=yaxis] (axis cs:0,-5) -- (axis cs:0,2);
 
-\draw[dotted,color=black,fill=white] (0.5,-5) circle[radius=3pt];
+\addplot[fill=hred!20!white,domain=-5:2] fill between [of=spectrum and yaxis,soft clip={domain=-5:5}];
+\addplot[fill=hred!60!white,domain=-5:2] fill between [of=occupation and yaxis,soft clip={domain=-5:5}];
 
-\path[color=hyellow,>=stealth,->,shorten >=0.15cm,shorten <=0.15cm,out=120,in=210,line width=1pt] (0.5,-5) edge (0.8,-2);
+% \draw[line width=1pt] (axis cs:0,-2.2) -- node[midway,below] {$\mu_{\text{r}}$} (1,-2.2);
+\end{axis}
 
-\draw[color=black,fill=hgreen] (0.8,-2.1) circle[radius=3pt];
+% l-lead
+% (position of lead has to be set manually)
+\begin{axis}[%
+ymin=-5,ymax=5,
+xmin=0,xmax=3.5,
+xtick=\empty,
+ytick=\empty,
+axis line style={draw=none},
+scale=1,
+clip mode=individual,
+at={(-2.5cm,-7.85cm)}]
 
-\path[color=hred,>=stealth,->,shorten >=0.15cm,shorten <=0.15cm,out=-30,in=-150,line width=1pt] (0.8,-2.2) edge (3.2,-2); 
+\addplot[solid,domain=-2:5,hred,name path=spectrum,samples=200] ({1.*1.0^2/(x^2+1.0^2)},{x});
+\addplot[solid,domain=-2:5,hred,name path=occupation,samples=200] ({1.*1.0^2/(x^2+1.0^2)*1./(exp((x-2.2)/0.06)+1.)},{x});
+\path[name path=yaxis] (axis cs:0,-2) -- (axis cs:0,5);
+
+\addplot[fill=hred!20!white] fill between [of=spectrum and yaxis,soft clip={domain=-2:5}];
+\addplot[fill=hred!60!white] fill between [of=occupation and yaxis,soft clip={domain=-2:5}];
+
+% \draw[line width=1pt] (axis cs:0,2.2) -- node[midway,above] {$\mu_{\text{l}}$} (1,2.2);
+\end{axis}
 
 
 % Figure 3
+\begin{scope}[yshift=-12cm]
+% % r-lead
+% \filldraw[draw=hred,fill=hred!20!white] (2.5,3) arc [start angle=-90, end angle=90,x radius=2cm, y radius=1cm] -- cycle;  
+\fill[fill=hgreen!20!white] (0,3) -- (0,2) -- (0.2,1.99) arc [start angle=195, end angle=165,x radius=2cm, y radius=2cm] -- cycle;
+\draw[draw=hgreen] (0.2,1.99) arc [start angle=195, end angle=165,x radius=2cm, y radius=2cm];
+\draw[draw=hgreen] (0,2) -- (0,3);
+% UHB
+\fill[fill=hgreen!20!white] (0,3) arc [start angle=-90, end angle=90,x radius=2cm, y radius=1cm] -- cycle;  % Hubbard bands as parabolas
+\draw[draw=hgreen] (0,5) arc [start angle=90, end angle=-84.7,x radius=2cm, y radius=1cm]; 
+\draw[draw=hgreen] (0,3) -- (0,5);
+% LHB
+\fill[fill=hgreen!20!white] (0,0) arc [start angle=-90, end angle=90,x radius=2cm, y radius=1cm] -- cycle;  % Hubbard bands as parabolas
+\draw[draw=hgreen] (0,0) arc [start angle=-90, end angle=84.5,x radius=2cm, y radius=1cm];
+\draw[draw=hgreen] (0,0) -- (0,2);
+% % l-lead
+% \filldraw[draw=hred,fill=hred!20!white] (-2.5,0) arc [start angle=-90, end angle=90,x radius=2cm, y radius=1cm] -- cycle;
 
 
-\filldraw[draw=hred,fill=hred!20!white] (2.5,-9) arc [start angle=-90, end angle=90,x radius=2cm, y radius=1cm] -- cycle;  
+% text
+\node at (3.5,4) [minimum size = 0.1 cm]{\textcolor{hred}{r-lead}}; 
+\node at (1,4) [minimum size = 0.1 cm,xshift=0.2cm]{\textcolor{hgreen}{UHB}};
+\node at (1,1) [minimum size = 0.1 cm]{\textcolor{hgreen}{LHB}};
+\node at (-1.8,1) [minimum size = 0.1 cm]{\textcolor{hred!20!white}{l-lead}};
 
-\filldraw[draw=hgreen,fill=hgreen!20!white] (0,-9) arc [start angle=-90, end angle=90,x radius=2cm, y radius=1cm] -- cycle;  % Hubbard bands as parabolas
-
-
-
-\draw [->,>=Stealth,line width=1pt,decorate,decoration={snake,amplitude=0.2cm,segment length=0.4cm,pre length=0.4cm,post length=0.4cm},draw=hyellow] (-2.5,-8.5) -- (-0.2,-9.5);
-
-
-\filldraw[draw=hgreen,fill=hgreen!20!white] (0,-12) arc [start angle=-90, end angle=90,x radius=2cm, y radius=1cm] -- cycle;  % Hubbard bands as parabolas
-
-\filldraw[draw=hred,fill=hred!20!white] (-2.5,-12) arc [start angle=-90, end angle=90,x radius=2cm, y radius=1cm] -- cycle;  
+\node at (-2.5,4.5) {\bfseries(c)};
 
 
+% processes
 
-% text 
- 
-\node at (3.5,-8) [minimum size = 0.1 cm]{\textcolor{hred}{r-bath}}; 
-\node at (1,-8) [minimum size = 0.1 cm]{\textcolor{hgreen}{UH band}};
-\node at (1,-11) [minimum size = 0.1 cm]{\textcolor{hgreen}{LH band}};
-\node at (-1.5,-11) [minimum size = 0.1 cm]{\textcolor{hred}{l-bath}};
+% particles
+\draw[dotted,color=black,fill=white] (0.4,0.7) circle[radius=3pt];
+\draw[dotted,color=black,fill=white] (0.4,4.8) circle[radius=3pt];
+\draw[color=black,fill=hgreen] (0.4,3.25) circle[radius=3pt];
+\draw[dotted,color=black,fill=white] (0.9,1.7) circle[radius=3pt];
+\draw[color=black,fill=hgreen] (0.9,3.25) circle[radius=3pt];
+% driving
+\path[color=hyellow,>=stealth,->,shorten >=0.15cm,shorten <=0.15cm,out=120,in=-120,line width=1pt] (0.4,0.7) edge (0.4,4.8);
+\draw [->,>=Stealth,line width=1pt,decorate,decoration={snake,amplitude=0.2cm,segment length=0.4cm,pre length=0.4cm,post length=0.4cm},draw=hyellow] (-2.0,3.5) -- (-0.3,2.5);
+\node at (-1,3.5) {\textcolor{hyellow}{$\Omega$}};
+% impact ionization
+\path[>=stealth,->,shorten >=0.15cm,shorten <=0.15cm,out=-60,in=60,line width=1pt] (0.4,4.8) edge (0.4,3.25);
+\path[>=stealth,->,shorten >=0.15cm,shorten <=0.15cm,out=120,in=-120,line width=1pt] (0.9,1.7) edge (0.9,3.25);
+% escape
+\path[color=hred,>=stealth,->,shorten >=0.15cm,shorten <=0.15cm,out=30,in=150,line width=1pt] (0.4,3.25) edge (2.85,3.25);
+\path[color=hred,>=stealth,->,shorten >=0.15cm,shorten  <=0.15cm,out=-30,in=-150,line width=1pt] (0.9,3.25) edge (3.1,3.25);
 
-\node at (-1,-8.7) {\textcolor{hyellow}{$\Omega$}};
+\end{scope}
 
-\node at (-2.7,-7) {\bfseries(c)};
+% r-lead
+% (position of lead has to be set manually)
+\begin{axis}[%
+xmin=0,xmax=3.5,
+ymin=-5,ymax=5,
+xtick=\empty,
+ytick=\empty,
+axis line style={draw=none},
+scale=1,
+at={(2.5cm,-10.85cm)}]
 
+\addplot[solid,domain=-5:2,hred,name path=spectrum,samples=200] ({1.*1.0^2/(x^2+1.0^2)},{x});
+\addplot[solid,domain=-5:2,hred,name path=occupation,samples=200] ({1.*1.0^2/(x^2+1.0^2)*1./(exp((x+2.2)/0.06)+1.)},{x});
+\path[name path=yaxis] (axis cs:0,-5) -- (axis cs:0,2);
 
-\draw[dotted,color=black,fill=white] (0.5,-11.3) circle[radius=3pt];
+\addplot[fill=hred!20!white,domain=-5:2] fill between [of=spectrum and yaxis,soft clip={domain=-5:5}];
+\addplot[fill=hred!60!white,domain=-5:2] fill between [of=occupation and yaxis,soft clip={domain=-5:5}];
 
-\path[color=hyellow,>=stealth,->,shorten >=0.15cm,shorten <=0.15cm,out=120,in=240,line width=1pt] (0.5,-11.3) edge (0.4,-7.2);
+% \draw[line width=1pt] (axis cs:0,-2.2) -- node[midway,below] {$\mu_{\text{r}}$} (1,-2.2);
+\end{axis}
 
-\draw[dotted,color=black,fill=white] (0.4,-7.3) circle[radius=3pt];
+% l-lead
+% (position of lead has to be set manually)
+\begin{axis}[%
+ymin=-5,ymax=5,
+xmin=0,xmax=3.5,
+xtick=\empty,
+ytick=\empty,
+axis line style={draw=none},
+scale=1,
+clip mode=individual,
+at={(-2.5cm,-13.85cm)}]
 
-\path[>=stealth,->,shorten >=0.15cm,shorten <=0.15cm,out=-60,in=-180,line width=1pt] (0.4,-7.3) edge (1.6,-8);
+\addplot[solid,domain=-2:5,hred,name path=spectrum,samples=200] ({1.*1.0^2/(x^2+1.0^2)},{x});
+\addplot[solid,domain=-2:5,hred,name path=occupation,samples=200] ({1.*1.0^2/(x^2+1.0^2)*1./(exp((x-2.2)/0.06)+1.)},{x});
+\path[name path=yaxis] (axis cs:0,-2) -- (axis cs:0,5);
 
-\draw[color=black,fill=hgreen] (1.6,-8) circle[radius=3pt];
+\addplot[fill=hred!20!white] fill between [of=spectrum and yaxis,soft clip={domain=-2:5}];
+\addplot[fill=hred!60!white] fill between [of=occupation and yaxis,soft clip={domain=-2:5}];
 
-\path[color=hred,>=stealth,->,shorten >=0.15cm,shorten <=0.15cm,out=30,in=150,line width=1pt] (1.6,-8) edge (3.6,-8);
-
-\draw[dotted,color=black,fill=white] (0.9,-10.3) circle[radius=3pt];
-
-\path[>=stealth,->,shorten >=0.15cm,shorten <=0.15cm,out=120,in=-150,line width=1pt] (0.9,-10.3) edge (0.7,-8.8);
-
-\draw[color=black,fill=hgreen] (0.67,-8.75) circle[radius=3pt];
-
-\path[color=hred,>=stealth,->,shorten >=0.15cm,shorten  <=0.15cm,out=-30,in=210,line width=1pt] (0.7,-8.7) edge (3.6,-8.4);
-
-% \path[>=stealth,->,shorten >=0.15cm,shorten <=0.15cm,out=-30,in=-150,line width=1pt] (0.8,-2.2) edge (3.2,-2);
-
+% \draw[line width=1pt] (axis cs:0,2.2) -- node[midway,above] {$\mu_{\text{l}}$} (1,2.2);
+\end{axis}
 
 
 \end{tikzpicture}

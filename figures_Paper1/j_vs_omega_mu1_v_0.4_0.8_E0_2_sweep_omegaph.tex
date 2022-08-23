@@ -87,8 +87,9 @@ ymin=0.000,
 ymax=0.013,   
 minor tick num=1, 
 grid=both,
-xlabel={$\Omega/t^{*}$},
-ylabel={$j/j_0$},
+xlabel={$\Omega$},
+% ylabel={$j/j_0$},
+ylabel={$j$},
 legend style={at={(axis cs:19.5,0.014)},anchor=north,mark options={scale=1.0},/tikz/every odd column/.append style={column sep=0.5mm},legend columns=1},
 legend cell align=left,
 clip mode=individual,
@@ -176,8 +177,8 @@ ymin=0.00,
 ymax=0.06,   
 minor tick num=1, 
 grid=both,
-xlabel={$\Omega/t^{*}$},
-ylabel={$N_{D}$},
+xlabel={$\Omega$},
+ylabel={$N_{\text{D}}$},
 legend style={at={(axis cs:12,0.024)},anchor=north,mark options={scale=1.0},/tikz/every odd column/.append style={column sep=0.5mm},legend columns=1},
 legend cell align=left,
 clip mode=individual,
@@ -201,15 +202,15 @@ y tick label style={
 ] 
 
 \addlegendimage{solid,color=hblue,scale={1.0},line width=1pt}
-\addlegendentry{$v=0.4, \omega_{ph}=0.025$};
-\addlegendimage{dashed,color=hblue,scale={1.0},line width=1pt}
-\addlegendentry{$v=0.4, \omega_{ph}=0.05$};
+\addlegendentry{$v=0.4, \omega_{\text{ph}}=0.025$};
 \addlegendimage{solid,color=hred,scale={1.0},line width=1pt}
-\addlegendentry{$v=0.8, \omega_{ph}=0.025$};
+\addlegendentry{$v=0.8, \omega_{\text{ph}}=0.025$};
+\addlegendimage{dashed,color=hblue,scale={1.0},line width=1pt}
+\addlegendentry{$v=0.4, \omega_{\text{ph}}=0.05$};
 \addlegendimage{dashed,color=hred,scale={1.0},line width=1pt}
-\addlegendentry{$v=0.8, \omega_{ph}=0.05$};
+\addlegendentry{$v=0.8, \omega_{\text{ph}}=0.05$};
 
-
+ 
 % \addplot +[dashed,very thin,color=hblue,mark=none] coordinates {(-2.55, 0.0) (-2.55, 0.035)};
 % \addplot +[dashed,very thin,color=hblue,mark=none] coordinates {(0.525, 0.0) (0.525, 0.035)};
 % \draw [stealth-stealth,thick,color=hblue](-2.55, 0.015) -- (0.525, 0.015);

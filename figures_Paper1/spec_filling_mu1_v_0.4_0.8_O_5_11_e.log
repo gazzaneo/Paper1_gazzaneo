@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2022.3.10)  21 JUL 2022 10:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2022.3.10)  22 AUG 2022 15:05
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -815,10 +815,10 @@ rid,axis ticks,axis lines,axis tick labels,pre main,main,axis descriptions,axis
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 (./spec_filling_mu1_v_0.4_0.8_O_5_11_e.aux) ) 
 Here is how much of TeX's memory you used:
- 26876 strings out of 479825
- 697167 string characters out of 5880875
- 2899537 words of memory out of 5000000
- 43441 multiletter control sequences out of 15000+600000
+ 26877 strings out of 479825
+ 697184 string characters out of 5880875
+ 2899521 words of memory out of 5000000
+ 43442 multiletter control sequences out of 15000+600000
  405423 words of font info for 31 fonts, out of 8000000 for 9000
  891 hyphenation exceptions out of 8191
  102i,15n,103p,778b,2372s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -829,7 +829,7 @@ m/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/sha
 re/texmf/fonts/type1/public/cm-super/sfbx1000.pfb>
-Output written on spec_filling_mu1_v_0.4_0.8_O_5_11_e.pdf (1 page, 251534 bytes
+Output written on spec_filling_mu1_v_0.4_0.8_O_5_11_e.pdf (1 page, 250772 bytes
 ).
 PDF statistics:
  36 PDF objects out of 1000 (max. 8388607)
