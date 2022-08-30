@@ -9,7 +9,7 @@
 %%%%%%%%%%%%
 \usepackage{pgfplots}    % pgfplots 
 \usepackage{tikz-3dplot} % 3D coordinate frames
-\usepackage{gnuplot-lua-tikz}
+%\usepackage{gnuplot-lua-tikz}                     % macOS does not like it -> restore if you need it
 \usepgfplotslibrary{fillbetween}
 \usepgfplotslibrary{colormaps}
 \pgfplotsset{compat=1.17}
@@ -97,8 +97,7 @@ clip mode=individual,
 clip marker paths=true, 
 xtick={-15,-10,-5,0,5,10,15},
 ytick={0.00,0.03,0.06,0.09},
-% yticklabels={\smash{\raisebox{0.1\height}{0}},0.002,0.004,0.006,0.008,0.01,0.012},
-% yticklabels={\smash{\raisebox{0.1\height}{0}},0.002,0.004,0.006,0.008,0.01,0.012,\smash{\raisebox{-0.8\height}{5}}},
+ yticklabels={\smash{\raisebox{0.1\height}{0}},3,6,\smash{\raisebox{-0.8\height}{9}}},
 x tick label style={
     /pgf/number format/.cd,
     fixed,
@@ -113,10 +112,10 @@ y tick label style={
     /tikz/.cd}
 ] 
 
-\addlegendimage{solid,color=hcoral,scale={1.0},line width=1pt}
-\addlegendentry{$v=0.4$};
-\addlegendimage{solid,color=hlime,scale={1.0},line width=1pt} 
-\addlegendentry{$v=0.8$};
+%\addlegendimage{solid,color=hcoral,scale={1.0},line width=1pt}
+%\addlegendentry{$v=0.4$};
+%\addlegendimage{solid,color=hlime,scale={1.0},line width=1pt} 
+%\addlegendentry{$v=0.8$};
 
 % \addplot +[dashed,very thin,color=hblue,mark=none] coordinates {(-2.55, 0.0) (-2.55, 0.035)};
 % \addplot +[dashed,very thin,color=hblue,mark=none] coordinates {(0.525, 0.0) (0.525, 0.035)};
@@ -166,7 +165,7 @@ plot "neq_distr_f_filling_hyb0.8O5.dat" u 1:3 w l;
 % \node[fill=none,color=hblue,scale={1.0}] at (axis cs:-1.20,0.017){$F$}; 
 % \node[fill=none,color=hred,scale={1.0}] at (axis cs:1.20,0.022){$F$};
  \node[fill=none,scale=1.0] at (axis cs:-13.5,0.085) {\bfseries(a)};
- \node[fill=none,scale=1.0] at (axis cs:11.5,0.085) {$\Omega=5$};
+ \node[draw,fill=white,scale=1.0] at (axis cs:11.25,0.085) {$\Omega=5$};
  
   
   
@@ -181,7 +180,7 @@ minor tick num=1,
 grid=both,
 xlabel={$\omega$},
 % ylabel={$A(\omega)/t^{*-1}$},
-legend style={at={(axis cs:-8.8,0.017)},anchor=north,mark options={scale=1.0},/tikz/every odd column/.append style={column sep=0.5mm},legend columns=1},
+legend style={at={(axis cs:-22.0,0.034)},anchor=west,mark options={scale=1.0},/tikz/every odd column/.append style={column sep=0.5mm},legend columns=1},
 legend cell align=left,
 clip mode=individual,
 clip marker paths=true, 
@@ -203,9 +202,9 @@ y tick label style={
     /tikz/.cd}
 ] 
 
-\addlegendimage{solid,color=hblue,scale={1.0},line width=1pt}
+\addlegendimage{solid,color=hcoral,scale={1.0},line width=1pt}
 \addlegendentry{$v=0.4$};
-\addlegendimage{solid,color=hred,scale={1.0},line width=1pt} 
+\addlegendimage{solid,color=hlime,scale={1.0},line width=1pt} 
 \addlegendentry{$v=0.8$};
 
 % \addplot +[dashed,very thin,color=hblue,mark=none] coordinates {(-2.55, 0.0) (-2.55, 0.035)};
@@ -227,36 +226,36 @@ y tick label style={
  
 % \draw (axis cs:4,0) -- (axis cs:10,0.01);
 
-\addplot[solid,raw gnuplot,color=hblue,line width=1pt] gnuplot {
+\addplot[solid,raw gnuplot,color=hcoral,line width=1pt] gnuplot {
 plot './Green_hyb0.4O11.dat' u 1:(-1/3.1415)*($3) w l;
 };  
 
 
-\addplot[name path=neq_distr_f_filling_hyb0.4O11,solid,raw gnuplot,color=hblue,line width=1pt,opacity=0.0] gnuplot {
+\addplot[name path=neq_distr_f_filling_hyb0.4O11,solid,raw gnuplot,color=hcoral,line width=1pt,opacity=0.0] gnuplot {
 plot "neq_distr_f_filling_hyb0.4O11.dat" u 1:3 w l;
 }; 
 
 
-\addplot[solid,raw gnuplot,color=hred,line width=1pt] gnuplot {
+\addplot[solid,raw gnuplot,color=hlime,line width=1pt] gnuplot {
 plot './Green_hyb0.8O11.dat' u 1:(-1/3.1415)*($3) w l;
 };
  
  
-\addplot[name path=neq_distr_f_filling_hyb0.8O11,solid,raw gnuplot,color=hred,line width=1pt,opacity=0.0] gnuplot {
+\addplot[name path=neq_distr_f_filling_hyb0.8O11,solid,raw gnuplot,color=hlime,line width=1pt,opacity=0.0] gnuplot {
 plot "neq_distr_f_filling_hyb0.8O11.dat" u 1:3 w l;
 };
    
   
     
 \path[name path=xaxis] (axis cs:-15,0) -- (axis cs:15,0);
-\addplot [fill=hblue,fill opacity=0.5] fill between[of=neq_distr_f_filling_hyb0.4O11 and xaxis,soft clip={domain=-15:15}];
-\addplot [fill=hred,fill opacity=0.5] fill between[of=neq_distr_f_filling_hyb0.8O11 and xaxis,soft clip={domain=-15:15}];
+\addplot [fill=hcoral,fill opacity=0.5] fill between[of=neq_distr_f_filling_hyb0.4O11 and xaxis,soft clip={domain=-15:15}];
+\addplot [fill=hlime,fill opacity=0.5] fill between[of=neq_distr_f_filling_hyb0.8O11 and xaxis,soft clip={domain=-15:15}];
      
 
 % \node[fill=none,color=hblue,scale={1.0}] at (axis cs:-1.20,0.017){$F$};
 % \node[fill=none,color=hred,scale={1.0}] at (axis cs:1.20,0.022){$F$};
  \node[fill=none,scale=1.0] at (axis cs:-13.5,0.085) {\bfseries(b)};
- \node[fill=none,scale=1.0] at (axis cs:11.5,0.085) {$\Omega=11$};
+ \node[draw,fill=white,scale=1.0] at (axis cs:11.25,0.085) {$\Omega=11$};
 
   
      
