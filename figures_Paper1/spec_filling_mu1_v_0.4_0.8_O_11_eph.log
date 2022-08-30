@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2022.3.10)  22 AUG 2022 15:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2022.3.10)  29 AUG 2022 08:47
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -758,7 +758,7 @@ runsystem(gnuplot spec_filling_mu1_v_0.4_0.8_O_11_eph.pgf-plot.gnuplot)...execu
 ted.
 
 PGFPlots: reading {spec_filling_mu1_v_0.4_0.8_O_11_eph.pgf-plot.table}
-Package pgfplots info on input line 182: fill between: activating layered graph
+Package pgfplots info on input line 183: fill between: activating layered graph
 ics
 \pgf@layerbox@axis background=\box68
 \pgf@layerboxsaved@axis background=\box69
@@ -776,7 +776,7 @@ ics
 \pgf@layerboxsaved@axis descriptions=\box81
 \pgf@layerbox@axis foreground=\box82
 \pgf@layerboxsaved@axis foreground=\box83
-Package pgfplots info on input line 182: Setting layers 'axis background,axis g
+Package pgfplots info on input line 183: Setting layers 'axis background,axis g
 rid,axis ticks,axis lines,axis tick labels,pre main,main,axis descriptions,axis
  foreground'...
 Missing character: There is no ; in font nullfont!
@@ -805,9 +805,9 @@ runsystem(gnuplot spec_filling_mu1_v_0.4_0.8_O_11_eph.pgf-plot.gnuplot)...execu
 ted.
 
 PGFPlots: reading {spec_filling_mu1_v_0.4_0.8_O_11_eph.pgf-plot.table}
-Package pgfplots info on input line 224: fill between: activating layered graph
+Package pgfplots info on input line 225: fill between: activating layered graph
 ics
-Package pgfplots info on input line 224: Setting layers 'axis background,axis g
+Package pgfplots info on input line 225: Setting layers 'axis background,axis g
 rid,axis ticks,axis lines,axis tick labels,pre main,main,axis descriptions,axis
  foreground'...
 [1
@@ -817,11 +817,11 @@ rid,axis ticks,axis lines,axis tick labels,pre main,main,axis descriptions,axis
 Here is how much of TeX's memory you used:
  26880 strings out of 479825
  697263 string characters out of 5880875
- 2899976 words of memory out of 5000000
+ 2901030 words of memory out of 5000000
  43445 multiletter control sequences out of 15000+600000
  405423 words of font info for 31 fonts, out of 8000000 for 9000
  891 hyphenation exceptions out of 8191
- 102i,15n,103p,778b,2372s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 102i,15n,103p,778b,2392s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/
 cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
@@ -830,7 +830,7 @@ pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/sha
 re/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1
 /public/cm-super/sfrm1000.pfb>
-Output written on spec_filling_mu1_v_0.4_0.8_O_11_eph.pdf (1 page, 253157 bytes
+Output written on spec_filling_mu1_v_0.4_0.8_O_11_eph.pdf (1 page, 253253 bytes
 ).
 PDF statistics:
  40 PDF objects out of 1000 (max. 8388607)

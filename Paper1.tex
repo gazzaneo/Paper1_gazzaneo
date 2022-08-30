@@ -35,7 +35,7 @@
 \newcommand{\kel}[1]{\underline{#1}} % objects on Keldysh contour
 
 \newcommand{\defeq}{\overset{\mathrm{def}}{=\joinrel=}} % definition symbol ":="  
- 
+  
 %% REFERENCE
 \newcommand{\fig}[1]{Fig.~\ref{#1}}
 \newcommand{\figs}[1]{Figs.~\ref{#1}} 
@@ -62,7 +62,7 @@
 \newcommand{\Tcite}[1]{Ref.~~\cite{#1}}
 \newcommand{\Tcites}[1]{Refs.~~\cite{#1}}
 
-
+  
 %Defs
 \newcommand{\und}{\underline}
 \DeclareMathOperator*{\rre}{Re}
@@ -101,9 +101,6 @@
 \newcommand{\pimns}{IM$_\mathrm{ph}$} 
 \newcommand{\aimns}{IM$_\mathrm{aux}$}
 
-\newcommand{\mscomm}[1]{{\color{blue} MS Comment: #1}}
-%\newcommand{\kh}[1] {\textcolor{green}{KH comment: #1}}
-
 \definecolor{orange}{RGB}{252,77,6}
 \definecolor{brown}{RGB}{200,127,50}
 \definecolor{blue}{RGB}{0,0,255}
@@ -122,7 +119,7 @@
  
 \begin{document}
  
-%EA
+
 \title{Impact ionization processes in a photodriven Mott insulator: influence of phononic dissipation} 
 
 \author{Paolo Gazzaneo}
@@ -176,7 +173,6 @@ For this goal we consider the simplified model shown in Fig.~\ref{fig:setup}, co
  
   
 \begin{figure}[b] 
-% \captionsetup{width=\textwidth} 
 \includegraphics[width=0.9\linewidth]{./figures_Paper1/setup_voltmeter.pdf}
 \caption{(Color online) Schematic representation of the setup. A central, correlated layer with local Hubbard interaction $U$ and e-ph coupling $g$ (green) is sandwiched between two non-interacting layers (red) via the hybridization $v$ (black). The latter are in turn coupled to wide-band fermion reservoirs (blue) with different chemical potentials $\mu_{\text{l}/\text{r}}$, which introduce a broadening $\Gamma=\Gamma_{\text{l}}=\Gamma_{\text{r}}$.}
 \label{fig:setup}
@@ -444,16 +440,13 @@ For this reason, and due to the fact that the boundaries of these energy ranges 
 
 Upon inclusion of e-ph scattering, the outlined scheme remains valid except for the fact that  the pseudogap $\Delta_{\text{pg}}$ is slightly modified. As shown in Sec.~\ref{sec:E0_2_electrons_phonons}, the phonons broaden the DOS of the correlated layer and slightly fill and shrink the pseudogap.
  
-% \onecolumngrid
 \begin{figure*}[t]
 \includegraphics[width=0.7\textwidth]{./figures_Paper1/j_vs_omega_mu1_v_0.4_0.8_eph.pdf}
-% \captionsetup{width=\textwidth}
 \caption{(Color online) 
  (a) Time-averaged steady-state current $j$ and (b) double occupancy $N_{\text{D}}$ plotted as a function of the driving frequency $\Omega$. Results are shown for different values of the lead-layer hybridization $v$ as well as without and with e-ph interaction.
  Default parameters are specified at the beginning of Sec.~\ref{sec:results}.} 
 \label{fig:j_vs_omega_mu1_v_0.4_0.8_eph}
 \end{figure*}
-% \twocolumngrid 
 
 
 \subsection{EO system}
@@ -464,14 +457,12 @@ We start with the case without e-ph interaction and address the behavior of the 
 In Fig.~\ref{fig:j_vs_omega_mu1_v_0.4_0.8_eph}(a), the photocurrent $j$ increases as a function of the driving frequency $\Omega$ within the range $4\lesssim\Omega\lesssim8$ independent of the value of $v$. According to the discussion in Sec.~\ref{sec:scheme_only_electrons} (cf.  Fig.~\ref{fig:energy_setup}), this $\Omega$-range is expected to allow only for DEs. The current in this range  increases with increasing $v$. Similarly, the double occupation shown in Fig.~\ref{fig:j_vs_omega_mu1_v_0.4_0.8_eph}(b) increases as a function of the driving frequency~\footnote{Notice that the increase of $N_{\text{D}}$ in Fig.~\ref{fig:j_vs_omega_mu1_v_0.4_0.8_eph}(b) as compared to Ref.~\cite{so.do.18} is not as steep and large in magnitude. This is due to our setup, where every photoexcited carrier can escape into the right lead.}.
 
 \begin{figure}[b] 
-% \captionsetup{width=\textwidth}   
 \includegraphics[width=\linewidth]{./figures_Paper1/spec_filling_mu1_v_0.4_0.8_O_5_11_e.pdf}
 \caption{(Color online) Spectral function $A(\omega)$ (solid line) and occupation function $N(\omega)$ (shaded area) at (a) $\Omega=5$ and (b) $\Omega=11$ for $v=0.4$ and $0.8$ for the EO system. Default parameters are specified at the beginning of Sec.~\ref{sec:results}.}
 \label{fig:spec_filling_mu1_v_0.4_0.8_O_5_11_e}
 \end{figure} 
 
 \begin{figure}[b]  
-% \captionsetup{width=\textwidth} 
 \includegraphics[width=\linewidth]{./figures_Paper1/j_vs_omega_mu1_v_0.8_e_E0_3_4.pdf} 
 \caption{(Color online) (a) Time-averaged steady-state current $j$ and (b) double occupancy $N_{\text{D}}$ as a function of $\Omega$, at $v=0.8$ for $E_0=3,4$ for the EO system. Default parameters are specified at the beginning of Sec.~\ref{sec:results}.} 
 \label{fig:j_vs_omega_mu1_v_0.8_e_E0_3_4}
@@ -502,7 +493,6 @@ The spectral and occupation functions  shown in Fig.~\ref{fig:spec_filling_mu1_v
 This reduction of the pseudogap explains why the current in Fig.~\ref{fig:j_vs_omega_mu1_v_0.4_0.8_eph}(a) is slightly larger in presence of phonons for $\Omega\lesssim7$. With a smaller pseudogap and more states at its edges, more electrons can be directly excited with a given driving frequency $\Omega$ thereby increasing the photocurrent. On the other hand, the suppression of the current by e-ph interaction in the range $7\lesssim\Omega\lesssim14$ is due to the dissipation-induced reduction of spectral weight at frequencies $|\omega| \gtrsim 3.5$, cf. Fig. \ref{fig:spec_filling_mu1_v_0.4_0.8_O_11_eph}. 
  
 \begin{figure}[b]
-% \captionsetup{width=\textwidth} 
 \includegraphics[width=\linewidth]{./figures_Paper1/spec_filling_mu1_v_0.4_0.8_O_11_eph.pdf}
 \caption{(Color online) Spectral function $A(\omega)$ (solid line) and occupation function $N(\omega)$ (shaded area) at $\Omega=11$ without and with e-ph interaction, for (a) $v=0.4$ and (b) $v=0.8$. Default parameters are specified at the beginning of Sec.~\ref{sec:results}.} 
 \label{fig:spec_filling_mu1_v_0.4_0.8_O_11_eph}
@@ -511,9 +501,8 @@ This reduction of the pseudogap explains why the current in Fig.~\ref{fig:j_vs_o
 
 The increase of the double occupation $N_{\text{D}}$ seen in Fig.~\ref{fig:j_vs_omega_mu1_v_0.4_0.8_eph}(b) for the case with phonons can already be inferred from the occupation function $N(\omega)$ at positive frequencies depicted in Fig.~\ref{fig:spec_filling_mu1_v_0.4_0.8_O_11_eph}.
 
- 
+  
 \begin{figure}[t] 
-% \captionsetup{width=\textwidth}  
 \includegraphics[width=\linewidth]{./figures_Paper1/j_vs_omega_mu1_v_0.4_0.8_E0_2_sweep_omegaph.pdf}
 \caption{(Color online) (a) Time-averaged steady-state current $j$ and (b) double occupancy $N_{\text{D}}$ as a function of $\Omega$, for $v=0.4, 0.8$, at phonon cutoff frequencies $\omega_{\text{ph}}=0.025, 0.05$. Default parameters are specified at the beginning of Sec.~\ref{sec:results}.} 
 \label{fig:j_vs_omega_mu1_v_0.4_0.8_E0_2_sweep_omegaph}
@@ -527,7 +516,6 @@ This behavior is qualitatively valid for different values of the soft cutoff pho
 current and double occupation is slightly boosted when decreasing $\omega_{\text{ph}}$~\footnote{Reducing $\omega_{\text{ph}}$ has two effects. First, the phonon spectral function $A_{\text{ph}}(\omega)$ exhibits more weight at low frequencies $\omega\approx\omega_{\text{ph}}$. Second, it restricts the maximum value of the reciprocal lattice vector $\vec{q}_{\text{max}}$ via $\omega_{\text{ph}}=\omega(\vec{q}_{\text{max}})$~\cite{ma.ga.22u}, meaning that short-wavelength phonons are suppressed.}. 
     
 \begin{figure}[t] 
-% \captionsetup{width=\textwidth} 
 \includegraphics[width=\linewidth]{./figures_Paper1/j_vs_omega_mu1_sweep_v_E0_2_eph.pdf}
 \caption{(Color online) (a) Time-averaged steady-state current $j$ and (b) double occupancy $N_{\text{D}}$ as a function of $\Omega$, for $v=0.5,0.6,0.7$, without and with e-ph interaction. Default parameters are specified at the beginning of Sec.~\ref{sec:results}.} 
 \label{fig:j_vs_omega_mu1_sweep_v_E0_2_eph}
@@ -555,13 +543,8 @@ Experimentally, the electric field amplitude considered in this paper~\footnote{
 We thank A. Picano for fruitful discussions. This work was supported by the Austrian Science Fund (FWF) within Project P 33165-N, as well as NaWi Graz. The computational results presented have been obtained using the Vienna Scientific Cluster (VSC) and the D-Cluster Graz.
  
    
-\bibliographystyle{prsty}   
-% references in Phys Rev style
+\bibliographystyle{prsty}   % references in Phys Rev style
 \bibliography{references_database} 
  
-% \bibliographystyle{/afs/itp.tugraz.at/user/arrigoni/noneq-group/bibtex/prsty} 
-%\bibliography{New_References,/afs/itp.tugraz.at/user/arrigoni/noneq-group/bibtex/references_database.bib}
-% \bibliography{Additional_Refs.bib,references_database.bib}
-%\bibliography{New_References,references_database.bib}
 
 \end{document}  
