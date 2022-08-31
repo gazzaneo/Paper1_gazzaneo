@@ -122,26 +122,26 @@ y tick label style={
  
 % \draw (axis cs:4,0) -- (axis cs:10,0.01);
 
-\addplot[solid,raw gnuplot,color=hcoral,line width=1pt] gnuplot {
+\addplot[solid,raw gnuplot,color=hblue,line width=1pt] gnuplot {
 plot './Green_hyb0.4O11.dat' u 1:(-1/3.1415)*($3) w l;
 };  
 
-\addplot[name path=neq_distr_f_filling_hyb0.4O11,solid,raw gnuplot,color=hcoral,line width=1pt,opacity=0.0] gnuplot {
+\addplot[name path=neq_distr_f_filling_hyb0.4O11,solid,raw gnuplot,color=hblue,line width=1pt,opacity=0.0] gnuplot {
 plot './neq_distr_f_filling_hyb0.4O11.dat' u 1:3 w l;
 }; 
 
-\addplot[solid,raw gnuplot,color=hlime,line width=1pt] gnuplot {
+\addplot[solid,raw gnuplot,color=hred,line width=1pt] gnuplot {
 plot './Green_hyb0.4O11ph.dat' u 1:(-1/3.1415)*($3) w l;
 };
 
-\addplot[name path=neq_distr_f_filling_hyb0.4O11ph,solid,raw gnuplot,color=hlime,line width=1pt,opacity=0.0] gnuplot {
+\addplot[name path=neq_distr_f_filling_hyb0.4O11ph,solid,raw gnuplot,color=hred,line width=1pt,opacity=0.0] gnuplot {
 plot './neq_distr_f_filling_hyb0.4O11ph.dat' u 1:3 w l;
 };    
   
     
 \path[name path=xaxis] (axis cs:-15,0) -- (axis cs:15,0);
-\addplot [fill=hcoral,fill opacity=0.5] fill between[of=neq_distr_f_filling_hyb0.4O11 and xaxis,soft clip={domain=-15:15}];
-\addplot [fill=hlime,fill opacity=0.5] fill between[of=neq_distr_f_filling_hyb0.4O11ph and xaxis,soft clip={domain=-15:15}];
+\addplot [fill=hblue,fill opacity=0.5] fill between[of=neq_distr_f_filling_hyb0.4O11 and xaxis,soft clip={domain=-15:15}];
+\addplot [fill=hred,fill opacity=0.5] fill between[of=neq_distr_f_filling_hyb0.4O11ph and xaxis,soft clip={domain=-15:15}];
       
  \node[fill=none,scale=1.0] at (axis cs:-13.5,0.085) {\bfseries(a)};
  \node[draw,fill=white,scale=1.0] at (axis cs:11.25,0.085) {$v=0.4$};
@@ -181,9 +181,9 @@ y tick label style={
     /tikz/.cd}
 ] 
  
-\addlegendimage{solid,color=hcoral,scale={1.0},line width=1pt}
+\addlegendimage{solid,color=hblue,scale={1.0},line width=1pt}
 \addlegendentry{el};
-\addlegendimage{solid,color=hlime,scale={1.0},line width=1pt} 
+\addlegendimage{solid,color=hred,scale={1.0},line width=1pt} 
 \addlegendentry{el+ph};
 
 
@@ -191,34 +191,34 @@ y tick label style={
  
 % \draw (axis cs:4,0) -- (axis cs:10,0.01);
 
-\addplot[solid,raw gnuplot,color=hcoral,line width=1pt] gnuplot {
+\addplot[solid,raw gnuplot,color=hblue,line width=1pt] gnuplot {
 plot './Green_hyb0.8O11.dat' u 1:(-1/3.1415)*($3) w l;
 };  
 
-\addplot[name path=neq_distr_f_filling_hyb0.8O11,solid,raw gnuplot,color=hcoral,line width=1pt,opacity=0.0] gnuplot {
+\addplot[name path=neq_distr_f_filling_hyb0.8O11,solid,raw gnuplot,color=hblue,line width=1pt,opacity=0.0] gnuplot {
 plot './neq_distr_f_filling_hyb0.8O11.dat' u 1:3 w l;
 }; 
 
-\addplot[solid,raw gnuplot,color=hlime,line width=1pt] gnuplot {
+\addplot[solid,raw gnuplot,color=hred,line width=1pt] gnuplot {
 plot './Green_hyb0.8O11ph.dat' u 1:(-1/3.1415)*($3) w l;
 };
 
-\addplot[name path=neq_distr_f_filling_hyb0.8O11ph,solid,raw gnuplot,color=hlime,line width=1pt,opacity=0.0] gnuplot {
+\addplot[name path=neq_distr_f_filling_hyb0.8O11ph,solid,raw gnuplot,color=hred,line width=1pt,opacity=0.0] gnuplot {
 plot './neq_distr_f_filling_hyb0.8O11ph.dat' u 1:3 w l;
 }; 
 
  
 
 \path[name path=xaxis] (axis cs:-15,0) -- (axis cs:15,0);
-\addplot [fill=hcoral,fill opacity=0.5] fill between[of=neq_distr_f_filling_hyb0.8O11 and xaxis,soft clip={domain=-15:15}];
-\addplot [fill=hlime,fill opacity=0.5] fill between[of=neq_distr_f_filling_hyb0.8O11ph and xaxis,soft clip={domain=-15:15}];
+\addplot [fill=hblue,fill opacity=0.5] fill between[of=neq_distr_f_filling_hyb0.8O11 and xaxis,soft clip={domain=-15:15}];
+\addplot [fill=hred,fill opacity=0.5] fill between[of=neq_distr_f_filling_hyb0.8O11ph and xaxis,soft clip={domain=-15:15}];
  
  
  \node[fill=none,scale=1.0] at (axis cs:-13.5,0.085) {\bfseries(b)};
  \node[draw,fill=white,scale=1.0] at (axis cs:11.25,0.085) {$v=0.8$};
  
   
-     
+      
   
 
 \end{groupplot} 
