@@ -1,0 +1,1 @@
+/afs/itp.tugraz.at/user/arrigoni/bibtex/prsty.bst
