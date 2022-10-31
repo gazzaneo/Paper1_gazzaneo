@@ -1,0 +1,75 @@
+This is BibTeX, Version 0.99d (TeX Live 2020/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Paper1.aux
+The style file: prsty.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: Paper1Notes.bib
+Warning--entry type for "Note1" isn't style-file defined
+--line 1 of file Paper1Notes.bib
+Warning--entry type for "Note2" isn't style-file defined
+--line 2 of file Paper1Notes.bib
+Warning--entry type for "Note3" isn't style-file defined
+--line 3 of file Paper1Notes.bib
+Warning--entry type for "Note4" isn't style-file defined
+--line 4 of file Paper1Notes.bib
+Warning--entry type for "Note5" isn't style-file defined
+--line 5 of file Paper1Notes.bib
+Warning--entry type for "Note6" isn't style-file defined
+--line 6 of file Paper1Notes.bib
+Warning--entry type for "Note7" isn't style-file defined
+--line 7 of file Paper1Notes.bib
+Warning--entry type for "Note8" isn't style-file defined
+--line 8 of file Paper1Notes.bib
+Warning--entry type for "Note9" isn't style-file defined
+--line 9 of file Paper1Notes.bib
+Warning--entry type for "Note10" isn't style-file defined
+--line 10 of file Paper1Notes.bib
+Warning--entry type for "Note11" isn't style-file defined
+--line 11 of file Paper1Notes.bib
+Warning--entry type for "Note12" isn't style-file defined
+--line 12 of file Paper1Notes.bib
+Database file #2: footnotes.bib
+Database file #3: references_database.bib
+You've used 49 entries,
+            1909 wiz_defined-function locations,
+            762 strings with 12869 characters,
+and the built_in function-call counts, 10267 in all, are:
+= -- 284
+> -- 629
+< -- 0
++ -- 207
+- -- 158
+* -- 923
+:= -- 1293
+add.period$ -- 49
+call.type$ -- 49
+change.case$ -- 1
+chr.to.int$ -- 0
+cite$ -- 49
+duplicate$ -- 421
+empty$ -- 1075
+format.name$ -- 195
+if$ -- 2466
+int.to.chr$ -- 0
+int.to.str$ -- 49
+missing$ -- 0
+newline$ -- 150
+num.names$ -- 37
+pop$ -- 362
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 701
+stack$ -- 0
+substring$ -- 556
+swap$ -- 248
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 7
+warning$ -- 0
+while$ -- 72
+width$ -- 51
+write$ -- 234
+(There were 12 warnings)
