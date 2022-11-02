@@ -1,0 +1,140 @@
+Dear Dr. Kancharla,
+
+Thank you very much for your e-mail from October 24th with the reply of the Referees on our paper. The first Referee recommends publication without hesitation. The second Referee believes that the paper has to be published in Physical Review B, discussing the points he raised.
+
+In the new version of our paper we have taken into account in detail all comments. A detailed reply is also included to this letter.
+
+We hope that our paper is now suitable for publication in Phys. Rev. B.
+
+Yours sincerely,
+Paolo Gazzaneo, Tommaso Maria Mazzocchi, Jan Lotze and Enrico Arrigoni
+
+
+
+--------------------------------------------------
+          First Referee                          
+--------------------------------------------------
+
+1. As the authors pointed out the electric field amplitude considered
+in this paper is several orders of magnitude larger than that of the
+sunlight, therefore, strictly speaking the results presented in the
+present paper are more applicable to intense laser-light
+photoexcitations
+
+2. The authors have made an effort to extrapolate in the regime of
+smaller electric field amplitude and smaller hybridization strength.
+They note that in order to achieve the latter one would need to
+several layers where photexcited carriers separated by an electric
+field gradient would have more time to induce impact ionization before
+escaping into the leads.
+
+3. The authors plan in future investigation to address the previously
+mentioned issue.
+
+
+A1-A2-A3: We thank a lot the Referee for his remarks and acknowledgements about our article. 
+
+
+4. I would like to suggest that, perhaps, the authors, in their future
+investigations, could include the role of “bad” metallic contacts,
+maybe represented by narrow-band leads or possibly with a small-width
+insulating barrier between the leads and the material as abstracted by
+the Hubbard-like model studied. If the insulating barrier is
+microscopically small the carriers would still be able to tunnel, but
+perhaps would remain longer in the region of the material which might
+allow II to occur.
+
+A4: In our future investigation, we will keep this suggestion in mind.   
+
+ 
+
+----------------------------------------------------
+        Second Referee                              
+----------------------------------------------------
+
+************************************************************************
+*** To highlight the changes in the main text we marked them in BLUE ***
+************************************************************************
+
+
+1. It is really important to discuss why DMFT approximation is
+expected to be meaningful in quasi-2D case (1-layer Hubbard model
+coupled to leads).
+
+A1: The Referee is right, we acknowledge that a discussion on the meaninfulness of the DMFT approximation for quasi-2D cases is missing.
+
+In the quasi-2D case we are addressing, the use of DMFT and therefore neglecting the momentum dependence of the electron self-energy leads to meaningful results for two main reasons. 
+First: The considered system is not "strictly" two dimensional, meaning that there is still some dispersion in the third dimension, even though weak. This is exactly the case of our setup.
+Second: We are not including in our treatment long-range magnetic fluctuations or, more generally, spin-fluctuations. The inclusion of such physics gives truly nonlocal effects and therefore nonlocal contributions in the self-energy, whose momentum-dependence has to be clearly taken into account in this case. In lower dimensional systems, as the one we are considering, these effects are usually not negligible, but this depends on the physics one is interested in: to clearly address the influence of the leads and acoustic phonons on impact ionization processes, spatially nonlocal correlations would complicate the overall picture and understanding.
+Regarding this point, we are also limited in considering only single orbitals in the current version of our nonequilibrium many-body impurity solver.  
+
+As asked, we added in Sec.I a discussion on this point, with a reference to a comprehensive review of nonlocal correlations beyond DMFT (Rev. Mod. Phys. 90, 025003
+(2018)).
+    
+
+2. It seems that chosen temperature is pretty high. Please discuss why
+optical phonons are neglected.
+
+A2:
+
+We thank the Referee for raising this point, giving us the opportunity to clarify it better.
+
+The value of the temperature of T=0.02, is not high in comparison with the other characteristic energy scales of the system, as e.g. the soft cutoff acoustic phonon frequency and the Hubbard interaction. It is actually the smallest chosen energy scale. Usually, the optical phonons modes energy is at least twice the acoustic phonons one, therefore the choice of a small value for the temperature justifies in our view taking into account acoustic phonons and neglecting optical phonons.
+Just as a remark, we are interested in the effects of phononic dissipation and, to address such issue, the acoustic phonons with a finite bandwidth, in contrast to optical phonons, are more effective in energy dissipation, as already been written in Sec.II.
+
+As the Referee suggests, we inserted a footnote in Sec.IV, addressing explicitly this point.
+
+
+
+3. It is naturally expected that phonons reduce the bandgap (here,
+pseudogap), as in standard semiconductors, where the phonons give
+10-100meV reduction of the gap and the effect increases with
+temperature. Strictly speaking, to obtain the change of the
+bandstructure due to phonons one needs to calculate the Fan and DW
+terms of the , generally speaking, momentum-dependent electron
+self-energy. In this sense, again, how important are momentum
+dependencies of electron Sigma in 2D case?
+
+A3: We thank the Referee to have pointed out a similar effect of reduction of the pseudogap in semiconductors and for the clarification about the phonon renormalization of the band structure due to momentum-dependent self energy. This is an important point and we address the issue below.
+
+The importance of momentum dependencies of the electron self-energy in the 2D case depends on the level of sophistication one would like to achieve in considering acoustic phonons and therefore if one is more interested in quantitative results or not. As explicitly stated in Sec.I, "...our analysis can only provide qualitative results, while quantitative comparisons with experimental systems require a more realistic setup and are beyond the scope of this work."
+At this level, having used DMFT approximation and therefore considered momentum-independent self-energies, we can't quantify the importance of momentum dependencies in the electron self-energy.
+However, as pointed out in the review Rev. Mod. Phys. 89, 015003, the Fan term is also "...traditionally referred to as the self-energy in the Migdal approximation". This is exactly the term we included, without momentum dependence, in the Dyson equation to take into account the effect of the acoustic phonons on electrons. In the same review, it's stated that "The Debye-Waller contribution to the electron self-energy is almost invariably ignored in the literature on metals and superconductors...". In a wider view, systems displaying strong correlations, as we one taken into account, fall into this category, therefore we are confident that such term can be safely neglected for a qualitative description of the effects of acoustic phonons. 
+
+We included a footnote in Sec.IIIB addressing such issue, together with a reference to the review mentioned above (Rev. Mod. Phys. 89, 015003). 
+
+
+
+4. It is not clear from Conclusions (at least for me) what stopped the
+authors to consider more realistic weaker fields and hybridizations.
+
+A4: 
+
+We thank the Referee for having brought up this important point.
+
+We didn't consider weaker electric field amplitudes since DMFT only converges slowly for such a choice of parameters. We have already discussed this point in the footnote [47]. The same reasoning applies for smaller hybridizations, slowing down in a considerable way the convergence of the DMFT cycle. 
+
+We followed the suggestion of the Referee, putting in the main text in Sec.V the footnote [47], extending it to mention smaller hybridizations. 
+ 
+
+List of changes:
+
+**********************************************************************************************
+*** To highlight the changes we marked them in BLUE (in source code denoted by '\resub{}') ***
+**********************************************************************************************
+
+
+Motivated by questions/observations from Second Referee: 
+
+Modified Sec.I  
+Added reference in Sec.I
+Added footnote in Sec.IIIB
+Added reference in Sec.IIIB
+Added footnote in Sec.IV
+Modified Sec.V 
+
+
+
+
+
+

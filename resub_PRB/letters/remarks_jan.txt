@@ -1,0 +1,6 @@
+
+Concerning A3:
+There are additional reasons in the review [Rev. Mod. Phys. 89, 015003 (2017)] why we can neglect the Debye-Waller term:
+*The Debye-Waller term is of second order in the atomic displacements. As a first approximation, we assume them to be negligible.
+*The Debye-Waller term is proportional to the difference between nuclei+electron density for the self-consistent potential and for clamped nuclei. Using the self-consistent potential would mean to incorporate the feedback from the electrons onto the lattice/phonons, which we do not consider.
+*Reason given in the reply: The Debye-Waller term is static, i.e. independent of frequency. Hence within DMFT, it would correspond to a change in the chemical potential. Since we consider the particle-hole symmetric case, it does not contribute.

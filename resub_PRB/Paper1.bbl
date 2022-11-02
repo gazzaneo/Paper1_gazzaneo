@@ -121,12 +121,16 @@ H. Haug and A.-P. Jauho, {\em Quantum Kinetics in Transport and Optics of
 In fact, there is an indirect feedback via the DMFT self-consistency.
 
 \bibitem{Note3}
-{\protect \color {hblue} As explicitly stated in Sec.~\ref {sec:intro}, our
-  analysis provides only qualitative results. A more accurate treatment that
-  aims to provide quantitative predictions, should take into account the
-  crystal momentum dependence of $\protect \underline {\protect \bf {\Sigma
-  }}_{\protect \text {e-ph}}$. We refer to the review~\cite {gius.17} for a
-  detailed and comprehensive explanation.}
+{\protect \color {hblue} As stated in Sec.~\ref {sec:intro}, our analysis
+  provides only qualitative results. A more accurate treatment that aims to
+  provide quantitative predictions, should take into account the crystal
+  momentum dependence of $\protect \underline {\protect \bm {\Sigma
+  }}_{\protect \text {e-ph}}$. We refer to the review~\cite {gius.17} which
+  discusses the effects of phonons on the electronic bandstructure and the
+  modelling thereof.}
+
+\bibitem{gius.17}
+F. Giustino, Rev. Mod. Phys. {\bf 89},  015003  (2017).
 
 \bibitem{pi.li.21}
 A. Picano, J. Li, and M. Eckstein, Phys. Rev. B {\bf 104},  085108  (2021).
@@ -142,7 +146,7 @@ A. Georges, G. Kotliar, W. Krauth, and M.~J. Rozenberg, Rev. Mod. Phys. {\bf
 More specifically, we verified that in the parameter range in which FDSA is
   justified for the electron SE $\protect \underline {\protect \bm {\Sigma
   }}(\omega )$ (Sec.~\ref {sec:results}), the off-diagonal terms of the e-ph SE
-  $\protect \underline {\protect \bf {\Sigma }}_{\protect \text {e-ph}}(\omega
+  $\protect \underline {\protect \bm {\Sigma }}_{\protect \text {e-ph}}(\omega
   )$ are sufficiently suppressed.
 
 \bibitem{ar.kn.13}
@@ -162,10 +166,10 @@ A. Dorda, M. Sorantin, W. von~der Linden, and E. Arrigoni, New J. Phys. {\bf
   19},  063005  (2017).
 
 \bibitem{Note5}
-{\protect \color {hblue} The chosen value of the temperature is, in comparison
-  with the other paramaters of the system, as e.g. $\omega _{\protect \text
-  {ph}}$ and $U$, the smallest energy scale. For this reason, we can neglect
-  optical phonons in our qualitative treatment.}
+{\protect \color {hblue} The value chosen for the temperature is the smallest
+  energy scale as compared to the other parameters of the system, e.g. $\omega
+  _{\protect \text {ph}}$ and $U$. For this reason, we can neglect optical
+  phonons in our qualitative treatment.}
 
 \bibitem{Note6}
 Notice that the support of the leads' spectra are formally infinite.
