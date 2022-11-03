@@ -1,6 +1,6 @@
 Dear Dr. Kancharla,
 
-Thank you very much for your e-mail from October 24th with the reply of the Referees on our paper. The first Referee recommends publication without hesitation. The second Referee believes that the paper has to be published in Physical Review B, discussing the points he raised.
+Thank you very much for your e-mail from October 24th with the reply of the Referees on our paper. The first Referee recommends publication without hesitation. The second Referee believes that the paper has to be published in Physical Review B, after discussing the points she/he raised.
 
 In the new version of our paper we have taken into account in detail all comments. A detailed reply is also included to this letter.
 
@@ -8,7 +8,6 @@ We hope that our paper is now suitable for publication in Phys. Rev. B.
 
 Yours sincerely,
 Paolo Gazzaneo, Tommaso Maria Mazzocchi, Jan Lotze and Enrico Arrigoni
-
 
 
 --------------------------------------------------
@@ -32,7 +31,7 @@ escaping into the leads.
 mentioned issue.
 
 
-A1-A2-A3: We thank the Referee a lot for his remarks on and acknowledgement of our article. 
+A1-A2-A3: We thank the Referee for her/his remarks and aprreciation of our article. 
 
 
 4. I would like to suggest that, perhaps, the authors, in their future
@@ -44,7 +43,7 @@ microscopically small the carriers would still be able to tunnel, but
 perhaps would remain longer in the region of the material which might
 allow II to occur.
 
-A4: We will keep this suggestion in mind for our future investigations.
+A4: Thank you for this suggestion, which is an interesting input for  future investigations.
 
  
 
@@ -61,13 +60,9 @@ A4: We will keep this suggestion in mind for our future investigations.
 expected to be meaningful in quasi-2D case (1-layer Hubbard model
 coupled to leads).
 
-A1: The Referee is right, we acknowledge that a discussion on the meaningfulness of the DMFT approximation for the quasi-2D case is missing.
+A1: As the Referee says, the system is not strictly 2D. There is a coupling in the third direction due to the hybridisation to the leads. Although these are noninteracting, they introduce a dissipation which suppresses 2D coherence and makes nonlocal correlations less relevant.
 
-In the quasi-2D case we address, the use of DMFT which neglects the momentum dependence of the electron self-energy leads to meaningful results for two main reasons.
-
-First: The physical system we want to model with our setup is not "strictly" two dimensional, meaning that there is still some dispersion in the third dimension, even though it may be weak. For such quasi-2D systems DMFT can yield useful results (Phys. Rev. B 97, 115113 (2018)).
-
-Second: In our treatment we do not include nonlocal correlations which give rise to long-ranged collective excitations such as magnons. Including nonlocal correlations leads to truly nonlocal effects and therefore nonlocal contributions in the self-energy, whose momentum-dependence then clearly has to be taken into account. In low dimensional systems, like the one we are considering, these effects are usually not negligible. Yet their inclusion is also a matter of choice, depending on the physics one is interested in: to clearly address the influence of the leads and acoustic phonons on impact ionization processes, spatially nonlocal correlations would complicate the overall picture and understanding.
+On the other hand, antiferromagnetic (even short-range) correlations may play an important role in the spreading of photoexcited carriers, as discussed in prl 113,076405 (2014). These nonlocal effects are not taken into account in our paper and certain deserve future investigations.
 
 As asked, we added in Sec. I a discussion on this point, with a reference to a comprehensive review of nonlocal correlations beyond DMFT [Rev. Mod. Phys. 90, 025003 (2018)].
     
@@ -79,9 +74,8 @@ A2:
 
 We thank the Referee for raising this point, giving us the opportunity for further clarification.
 
-The value of the temperature of T=0.02 is not high compared with the other characteristic energy scales of the system, e.g. the soft cutoff of the acoustic phonon frequency w_ph=0.1 and the Hubbard interaction U=12. It is actually the smallest chosen energy scale. Usually, the optical phonon modes energy is at least twice that of the acoustic phonons one [see Figs. 4 and 5 in Phys. Rev. B 102, 245104 (2020)]. Therefore the choice of a small value for the temperature justifies in our view taking into account only acoustic phonons and neglecting optical phonons.
-
-Just as a remark, we are interested in the effects of phonon-mediated dissipation and for this purpose the acoustic phonons with a finite bandwidth, in contrast to optical phonons, are more effective in energy dissipation, as is already mentioned in Sec. II (there optical phonons are denoted Holstein phonons).
+The value of the temperature of T=0.02 is not large as compared with the other characteristic energy scales of the system, e.g. the soft cutoff of the acoustic phonon frequency w_ph=0.1 and the Hubbard interaction U=12, as well as the bandwidth. In addition taking the energy scale of about 1eV, it roughly corresponds to  room temperature.  
+In our simplified model we neglected optical phonons because they are less effective than acoustic ones in dissipating energy, as we mentioned in Sec. II 
 
 As the Referee suggests, we inserted a footnote in Sec. IV, addressing this point explicitly.
 
@@ -95,11 +89,10 @@ terms of the, generally speaking, momentum-dependent electron
 self-energy. In this sense, again, how important are momentum
 dependencies of electron Sigma in 2D case?
 
-A3: We thank the Referee for pointing out a similar effect of reduced pseudogaps in semiconductors and for the clarification about the phonon renormalization of the band structure due to a momentum-dependent self-energy. This is an important point and we address it below.
+A3: We thank the Referee for pointing out this issue, which  we address it below.
 
-The importance of the momentum dependence of the electron self-energy in the 2D case depends on the level of sophistication one wants to achieve in considering acoustic phonons and therefore whether one wants quantitative results or is content with qualitative results. As explicitly stated in Sec. I, "...our analysis can only provide qualitative results, while quantitative comparisons with experimental systems require a more realistic setup and are beyond the scope of this work."
-At this level, having used the DMFT approximation and therefore considered momentum-independent self-energies, we cannot quantify the importance of momentum dependencies in the electron self-energy.
-However, as pointed out in the review Rev. Mod. Phys. 89, 015003 (2017), the Fan term is also "...traditionally referred to as the self-energy in the Migdal approximation". This is exactly the term we included, albeit without momentum dependence, to take into account the effect of the acoustic phonons on electrons. In the same review it is noted that the Debye-Waller term is static, i.e. independent of frequency. Hence within DMFT, it would correspond to a change in the chemical potential. Since we consider the particle-hole symmetric case, the Debye-Waller term does not contribute.
+The importance of the momentum dependence of the electron self-energy in the 2D case depends on the level of sophistication one wants to achieve in considering acoustic phonons and therefore whether one wants quantitative results or qualitative/semi-quantitative results are sufficient. As explicitly stated in Sec. I, "...our analysis can only provide qualitative results, while quantitative comparisons with experimental systems require a more realistic setup and are beyond the scope of this work."
+Let us mentioned that  the Fan (alias  self-energy in the Migdal approximation, see Rev. Mod. Phys. 89, 015003 (2017)) has been included in our calculation,  albeit without momentum dependence. The static Debye-Waller term corresponds in our DMFT case to a shift in the chemical potential, which is zero in the present particle-hole symmetric case.
 
 We included a footnote in Sec. III.B addressing the momentum-dependence, together with a reference to the review mentioned above [Rev. Mod. Phys. 89, 015003 (2017)].
 
@@ -109,11 +102,9 @@ authors to consider more realistic weaker fields and hybridizations.
 
 A4: 
 
-We thank the Referee for having brought up this important point.
-
 We did not consider weaker electric field amplitudes since DMFT only converges slowly for such a choice of parameters. We have already discussed this point in the footnote [47]. The same reasoning applies for smaller hybridization strength which slows down the convergence of the DMFT cycle considerably. 
 
-We followed the suggestion of the Referee, moving the footnote [47] into the main text in Sec. V and extending it to mention smaller hybridizations. 
+Prompted by the Referee's comment we moved the footnote [47] into the main text in Sec. V and extending it to mention smaller hybridizations. 
  
 
 List of changes:
