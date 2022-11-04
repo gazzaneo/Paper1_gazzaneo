@@ -31,7 +31,7 @@ escaping into the leads.
 mentioned issue.
 
 
-A1-A2-A3: We thank the Referee for her/his remarks and aprreciation of our article. 
+A1-A2-A3: We thank the Referee for her/his remarks and appreciation of our article. 
 
 
 4. I would like to suggest that, perhaps, the authors, in their future
@@ -43,7 +43,7 @@ microscopically small the carriers would still be able to tunnel, but
 perhaps would remain longer in the region of the material which might
 allow II to occur.
 
-A4: Thank you for this suggestion, which is an interesting input for  future investigations.
+A4: We thank the Referee for this suggestion, which is an interesting input for future investigations.
 
  
 
@@ -55,23 +55,24 @@ A4: Thank you for this suggestion, which is an interesting input for  future inv
 *** To highlight the changes in the main text we marked them in BLUE ***
 ************************************************************************
 
-
+ 
 1. It is really important to discuss why DMFT approximation is
 expected to be meaningful in quasi-2D case (1-layer Hubbard model
 coupled to leads).
 
-A1: As the Referee says, the system considered here is not strictly 2D. There is a coupling in the third direction due to the hybridisation to the leads. Although these are noninteracting, they introduce a dissipation which suppresses 2D coherence and makes nonlocal correlations less relevant.
+A1: As the Referee says, the system considered here is not strictly 2D. There is a coupling in the third direction due to the hybridization to the leads. Although these are noninteracting, they introduce a dissipation which suppresses 2D-coherence and makes nonlocal correlations less relevant.
 
-On the other hand, it is true that antiferromagnetic (even short-range) correlations may play an important role in the spreading of photoexcited carriers, as discussed in prl 113,076405 (2014). These nonlocal effects are not taken into account in our paper and certain deserve future investigations.
+On the other hand, it is true that antiferromagnetic (even short-range) correlations may play an important role in the spreading of photoexcited carriers, as discussed in Phys. Rev. Lett. 113, 076405
+(2014). These nonlocal effects are not taken into account in our paper and certainly deserve future investigations.
 
-As asked, we added in Sec. I a discussion on this point, with a reference to a comprehensive review of nonlocal correlations beyond DMFT [Rev. Mod. Phys. 90, 025003 (2018)].
+As asked, we added in Sec. I a discussion on this point, with a reference to the paper mentioned above and to a comprehensive review of nonlocal correlations beyond DMFT [Rev. Mod. Phys. 90, 025003 (2018)].
     
 
 2. It seems that chosen temperature is pretty high. Please discuss why
 optical phonons are neglected.
 
-A2: The value of the temperature of T=0.02 is not large as compared with the other characteristic energy scales of the system, e.g. the soft cutoff of the acoustic phonon frequency w_ph=0.1 and the Hubbard interaction U=12, as well as the bandwidth. In addition taking the energy scale of about 1eV, it roughly corresponds to  room temperature.  
-In our simplified model we neglected optical phonons because they are less effective than acoustic ones in dissipating energy, as we mentioned in Sec. II 
+A2: The value of the temperature of T=0.02 is not large as compared with the other characteristic energy scales of the system, e.g. the soft cutoff of the acoustic phonon frequency w_ph=0.1 and the Hubbard interaction U=12, as well as the Hubbard bands bandwidth. In addition, if one takes the energy scale of about 1eV or less, this would correspond to the room temperature or below. 
+In our simplified model, we neglected optical phonons because they are less effective than acoustic ones in dissipating energy, as we mentioned in Sec. II. 
 
 As the Referee suggests, we inserted a footnote in Sec. IV, addressing this point explicitly.
 
@@ -87,11 +88,10 @@ dependencies of electron Sigma in 2D case?
 
 A3: We thank the Referee for pointing out this issue, which  we now address  below and in the paper.
 
-The importance of the momentum dependence of the electron self-energy in the 2D case depends on the level of sophistication one wants to achieve in considering acoustic phonons and therefore whether one wants quantitative results or qualitative/semi-quantitative results are sufficient. As explicitly stated in Sec. I, "...our analysis can only provide qualitative results, while quantitative comparisons with experimental systems require a more realistic setup and are beyond the scope of this work." In this sense, we don't expect a momentum dependent Sigma would change the overall picture obtained in our work. We are not looking at a detailed band structure change.
-We have included Fan terms (alias  Migdal terms, see Rev. Mod. Phys. 89, 015003 (2017)) in our calculation, although without vertex corrections and momentum dependence. Neglecting the DW term, as we do is consistent with neglecting phonon self-consistency and restricting to first order terms in the phonon displacement.
+The importance of the momentum dependence of the electron self-energy in the 2D case depends on the level of sophistication one wants to achieve in considering acoustic phonons and therefore whether one wants quantitative results or qualitative/semi-quantitative results are sufficient. As explicitly stated in Sec. I, "...our analysis can only provide qualitative results, while quantitative comparisons with experimental systems require a more realistic setup and are beyond the scope of this work." In this sense, we don't expect that a momentum-dependent Sigma would change the overall picture obtained in our work. In fact, we are not looking at a detailed band structure change.
+We have included the Fan term (alias  Migdal term, see Rev. Mod. Phys. 89, 015003 (2017)) in our calculation, although without vertex corrections and momentum dependence. Neglecting the DW term, as we do, is consistent with neglecting phonon self-consistency and restricting to first-order terms in the phonon displacement.
 
-%EACOMM I would discuss this point in the conclusions as further things one could do.
-We included a footnote in Sec. III.B addressing the momentum-dependence, together with a reference to the review mentioned above.
+We included a discussion in Sec. V addressing this issue, together with a reference to the review mentioned above.
 
 
 4. It is not clear from Conclusions (at least for me) what stopped the
@@ -99,11 +99,11 @@ authors to consider more realistic weaker fields and hybridizations.
 
 A4: 
 
-We did not consider weaker electric field amplitudes since DMFT only converges slowly for such a choice of parameters. We have already discussed this point in the footnote [47]. The same reasoning applies for smaller hybridization strength which slows down the convergence of the DMFT cycle considerably. 
+We did not consider weaker electric field amplitudes since DMFT only converges slowly for such a choice of parameters. We have already discussed this point in the footnote [47]. This holds also for smaller hybridization strengths which slow down the convergence of the DMFT cycle considerably.    
 
-In connection with the Referee's comment we moved the footnote [47] into the main text in Sec. V and extending it to mention smaller hybridizations. 
+In connection with the Referee's comment we moved the footnote [47] into the main text in Sec. V and we extended it to mention smaller hybridizations. 
  
-
+ 
 List of changes:
 
 **********************************************************************************************
@@ -114,12 +114,10 @@ List of changes:
 Motivated by questions/observations from Second Referee: 
 
 Modified Sec. I  
-Added reference in Sec. I
-Added footnote in Sec. IIIB
-Added reference in Sec. IIIB
+Added references in Sec. I
 Added footnote in Sec. IV
 Modified Sec. V
-
+Added reference in Sec. V
 
 
 

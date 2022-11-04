@@ -67,6 +67,9 @@ E. Manousakis, Scientific Reports {\bf 9},  20395  (2019).
 \bibitem{ma.ev.22}
 F. Maislinger and H.~G. Evertz, Phys. Rev. B {\bf 105},  045114  (2022).
 
+\bibitem{ec.we.14}
+M. Eckstein and P. Werner, Phys. Rev. Lett. {\bf 113},  076405  (2014).
+
 \bibitem{ro.ha.18}
 G. Rohringer, H. Hafermann, A. Toschi, A.~A. Katanin, A.~E. Antipov, M.~I.
   Katsnelson, A.~I. Lichtenstein, A.~N. Rubtsov, and K. Held, Rev. Mod. Phys.
@@ -120,18 +123,6 @@ H. Haug and A.-P. Jauho, {\em Quantum Kinetics in Transport and Optics of
 \bibitem{Note2}
 In fact, there is an indirect feedback via the DMFT self-consistency.
 
-\bibitem{Note3}
-{\protect \color {hblue} As stated in Sec.~\ref {sec:intro}, our analysis
-  provides only qualitative results. A more accurate treatment that aims to
-  provide quantitative predictions, should take into account the crystal
-  momentum dependence of $\protect \underline {\protect \bm {\Sigma
-  }}_{\protect \text {e-ph}}$. We refer to the review~\cite {gius.17} which
-  discusses the effects of phonons on the electronic bandstructure and the
-  modelling thereof.}
-
-\bibitem{gius.17}
-F. Giustino, Rev. Mod. Phys. {\bf 89},  015003  (2017).
-
 \bibitem{pi.li.21}
 A. Picano, J. Li, and M. Eckstein, Phys. Rev. B {\bf 104},  085108  (2021).
 
@@ -142,7 +133,7 @@ W. Metzner and D. Vollhardt, Phys. Rev. Lett. {\bf 62},  324  (1989).
 A. Georges, G. Kotliar, W. Krauth, and M.~J. Rozenberg, Rev. Mod. Phys. {\bf
   68},  13  (1996).
 
-\bibitem{Note4}
+\bibitem{Note3}
 More specifically, we verified that in the parameter range in which FDSA is
   justified for the electron SE $\protect \underline {\protect \bm {\Sigma
   }}(\omega )$ (Sec.~\ref {sec:results}), the off-diagonal terms of the e-ph SE
@@ -165,40 +156,39 @@ A. Dorda, M. Ganahl, H.~G. Evertz, W. von~der Linden, and E. Arrigoni, Phys.
 A. Dorda, M. Sorantin, W. von~der Linden, and E. Arrigoni, New J. Phys. {\bf
   19},  063005  (2017).
 
-\bibitem{Note5}
-{\protect \color {hblue} The value chosen for the temperature is the smallest
-  energy scale as compared to the other parameters of the system, e.g. $\omega
-  _{\protect \text {ph}}$ and $U$. For this reason, we can neglect optical
-  phonons in our qualitative treatment.}
+\bibitem{Note4}
+{\protect \color {hblue} The value chosen for the temperature is small as
+  compared with the other characteristic energy scales of the system, e.g.
+  $\omega _{\protect \text {ph}}$, $U$ and $W_{\protect \text {b}}$.}
 
-\bibitem{Note6}
+\bibitem{Note5}
 Notice that the support of the leads' spectra are formally infinite.
   $W_{\protect \text {b}}$ is the value at which the spectrum gets suppressed.
 
-\bibitem{Note7}
+\bibitem{Note6}
 In Ref.~\cite {so.do.18} the factor is defined as $\alpha =t_{c}E_0/\Omega
   ^{2}$ and $t_{\protect \text {c}}=1$. Setting $t_{\protect \text {resc}}=1$,
   we define for consistency $\alpha $ as in the main text.
 
-\bibitem{Note8}
+\bibitem{Note7}
 Due to the hybridization with the metallic leads only a pseudogap $\Delta
   _{\protect \text {pg}}$ is present between the LHB and the UHB.
 
-\bibitem{Note9}
+\bibitem{Note8}
 The remaining leak current originates either from multiple-photon absorption
   processes which are strongly suppressed, or from the absence of a true gap.
 
-\bibitem{Note10}
+\bibitem{Note9}
 Notice that the increase of $N_{\protect \text {D}}$ in Fig.~\ref
   {fig:j_vs_omega_mu1_v_0.4_0.8_eph}(b) as compared to Ref.~\cite {so.do.18} is
   not as steep and large in magnitude. This is due to our setup, where every
   photoexcited carrier can escape into the right lead.
 
-\bibitem{Note11}
+\bibitem{Note10}
 The current $j$ does not approach zero as expected for $\Omega >20$ because of
   the background current as discussed in Ref.~\cite {so.do.18}.
 
-\bibitem{Note12}
+\bibitem{Note11}
 Reducing $\omega _{\protect \text {ph}}$ has two effects. First, the phonon
   spectral function $A_{\protect \text {ph}}(\omega )$ exhibits more weight at
   low frequencies around $\omega \approx \omega _{\protect \text {ph}}$.
@@ -206,5 +196,8 @@ Reducing $\omega _{\protect \text {ph}}$ has two effects. First, the phonon
   $\protect \bm {q}_{\protect \text {max}}$ via $\omega _{\protect \text
   {ph}}=\omega (\protect \bm {q}_{\protect \text {max}})$~\cite {ma.ga.22},
   meaning that short-wavelength phonons are suppressed.
+
+\bibitem{gius.17}
+F. Giustino, Rev. Mod. Phys. {\bf 89},  015003  (2017).
 
 \end{thebibliography}

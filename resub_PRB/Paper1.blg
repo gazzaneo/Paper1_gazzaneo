@@ -27,49 +27,51 @@ Warning--entry type for "Note10" isn't style-file defined
 --line 10 of file Paper1Notes.bib
 Warning--entry type for "Note11" isn't style-file defined
 --line 11 of file Paper1Notes.bib
-Warning--entry type for "Note12" isn't style-file defined
---line 12 of file Paper1Notes.bib
 Database file #2: footnotes.bib
 Database file #3: references_database.bib
-You've used 49 entries,
+Repeated entry---line 41400 of file references_database.bib
+ : @article{gius.17
+ :                 ,
+I'm skipping whatever remains of this entry
+You've used 50 entries,
             1909 wiz_defined-function locations,
-            762 strings with 12869 characters,
-and the built_in function-call counts, 10267 in all, are:
-= -- 284
-> -- 629
+            767 strings with 12547 characters,
+and the built_in function-call counts, 10592 in all, are:
+= -- 301
+> -- 644
 < -- 0
-+ -- 207
-- -- 158
-* -- 923
-:= -- 1293
-add.period$ -- 49
-call.type$ -- 49
++ -- 211
+- -- 161
+* -- 962
+:= -- 1337
+add.period$ -- 50
+call.type$ -- 50
 change.case$ -- 1
 chr.to.int$ -- 0
-cite$ -- 49
-duplicate$ -- 421
-empty$ -- 1075
-format.name$ -- 195
-if$ -- 2466
+cite$ -- 50
+duplicate$ -- 436
+empty$ -- 1089
+format.name$ -- 200
+if$ -- 2538
 int.to.chr$ -- 0
-int.to.str$ -- 49
+int.to.str$ -- 50
 missing$ -- 0
-newline$ -- 150
-num.names$ -- 37
-pop$ -- 362
+newline$ -- 153
+num.names$ -- 39
+pop$ -- 359
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 701
+skip$ -- 729
 stack$ -- 0
-substring$ -- 556
-swap$ -- 248
+substring$ -- 594
+swap$ -- 262
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 7
 warning$ -- 0
-while$ -- 72
-width$ -- 51
-write$ -- 234
-(There were 12 warnings)
+while$ -- 76
+width$ -- 52
+write$ -- 240
+(There was 1 error message)

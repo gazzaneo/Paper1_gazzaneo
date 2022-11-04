@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2022.3.10)  31 OCT 2022 10:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2022.3.10)  4 NOV 2022 16:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -511,23 +511,23 @@ LaTeX Font Info:    Trying to load font information for OMS+rsfs on input line
 162.
 
 (/usr/share/texlive/texmf-dist/tex/latex/calrsfs/OMSrsfs.fd)
-<Fig1.pdf, id=96, 163.58514pt x 184.58762pt>
+<Fig1.pdf, id=97, 163.58514pt x 184.58762pt>
 File: Fig1.pdf Graphic file (type pdf)
 <use Fig1.pdf>
-Package pdftex.def Info: Fig1.pdf  used on input line 180.
-(pdftex.def)             Requested size: 221.3985pt x 249.83315pt.
+Package pdftex.def Info: Fig1.pdf  used on input line 177.
+(pdftex.def)             Requested size: 184.5pt x 208.1957pt.
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 189.
+ on input line 183.
 
 
-Underfull \hbox (badness 1314) in paragraph at lines 243--245
+Underfull \hbox (badness 1314) in paragraph at lines 237--239
 []\OT1/cmr/m/n/10 To cor-rectly de-scribe the nonequi-lib-rium pe-ri-odic
  []
 
 [2 <./Fig1.pdf>]
-Overfull \hbox (3.22679pt too wide) detected at line 268
+Overfull \hbox (2.87819pt too wide) detected at line 263
 [][][][]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ![]\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10
  ^^O; []\OT1/cmr/m/n/10 ) = [][](\OML/cmm/m/it/10 ![]\OT1/cmr/m/n/10 ; \OML/cmm
 /m/it/10 ^^O; []\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^@ []\OT1/cmr/m/n/10 (\OML/
@@ -536,137 +536,114 @@ cmm/m/it/10 ![]\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 ^^O; []\OT1/cmr/m/n/10 ) \OMS
 L/cmm/m/it/10 ^^O; []\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;
  []
 
-LaTeX Font Info:    Trying to load font information for U+bbm on input line 277
+LaTeX Font Info:    Trying to load font information for U+bbm on input line 271
 .
 (/usr/share/texlive/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 )
-Underfull \hbox (badness 5475) in paragraph at lines 301--304
+Underfull \hbox (badness 5475) in paragraph at lines 295--298
 \OT1/cmr/m/n/10 where $\OML/cmm/m/it/10 "[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^
 O\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 "[] \OT1/cmr/m/n/10 + []\OML/cmm/m/it/10 
 ^^O$ \OT1/cmr/m/n/10 is the dis-per-sion,
  []
 
-
-Underfull \hbox (badness 3281) in paragraph at lines 311--313
-[]\OT1/cmr/m/n/10 The Keldysh com-po-nents of the non-interacting
- []
-
 [3]
-<Fig2.pdf, id=269, 256.07469pt x 500.76888pt>
+<Fig2.pdf, id=268, 256.07469pt x 500.76888pt>
 File: Fig2.pdf Graphic file (type pdf)
 <use Fig2.pdf>
-Package pdftex.def Info: Fig2.pdf  used on input line 408.
+Package pdftex.def Info: Fig2.pdf  used on input line 384.
 (pdftex.def)             Requested size: 196.80075pt x 384.86731pt.
  [4]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 419.
+ on input line 393.
 
-<Fig3.pdf, id=300, 405.37851pt x 203.04156pt>
+<Fig3.pdf, id=299, 405.37851pt x 203.04156pt>
 File: Fig3.pdf Graphic file (type pdf)
 <use Fig3.pdf>
-Package pdftex.def Info: Fig3.pdf  used on input line 447.
+Package pdftex.def Info: Fig3.pdf  used on input line 416.
 (pdftex.def)             Requested size: 356.99844pt x 178.81032pt.
 [5 <./Fig2.pdf>]
-<Fig4.pdf, id=331, 381.0556pt x 201.3382pt>
+<Fig4.pdf, id=332, 381.0556pt x 201.3382pt>
 File: Fig4.pdf Graphic file (type pdf)
 <use Fig4.pdf>
-Package pdftex.def Info: Fig4.pdf  used on input line 463.
+Package pdftex.def Info: Fig4.pdf  used on input line 431.
 (pdftex.def)             Requested size: 246.0pt x 129.98041pt.
-<Fig5.pdf, id=334, 405.60233pt x 203.03957pt>
+<Fig5.pdf, id=335, 405.60233pt x 203.03957pt>
 File: Fig5.pdf Graphic file (type pdf)
 <use Fig5.pdf>
-Package pdftex.def Info: Fig5.pdf  used on input line 469.
+Package pdftex.def Info: Fig5.pdf  used on input line 437.
 (pdftex.def)             Requested size: 246.0pt x 123.14447pt.
  [6 <./Fig3.pdf> <./Fig4.pdf> <./Fig5.pdf>]
-<Fig6.pdf, id=439, 381.0556pt x 201.3382pt>
+<Fig6.pdf, id=433, 381.0556pt x 201.3382pt>
 File: Fig6.pdf Graphic file (type pdf)
 <use Fig6.pdf>
-Package pdftex.def Info: Fig6.pdf  used on input line 499.
+Package pdftex.def Info: Fig6.pdf  used on input line 457.
 (pdftex.def)             Requested size: 246.0pt x 129.98041pt.
-<Fig7.pdf, id=444, 397.37862pt x 203.04156pt>
+<Fig7.pdf, id=443, 397.37862pt x 203.04156pt>
 File: Fig7.pdf Graphic file (type pdf)
 <use Fig7.pdf>
-Package pdftex.def Info: Fig7.pdf  used on input line 509.
+Package pdftex.def Info: Fig7.pdf  used on input line 467.
 (pdftex.def)             Requested size: 246.0pt x 125.69237pt.
-<Fig8.pdf, id=449, 397.37862pt x 203.04156pt>
+<Fig8.pdf, id=448, 397.37862pt x 203.04156pt>
 File: Fig8.pdf Graphic file (type pdf)
 <use Fig8.pdf>
-Package pdftex.def Info: Fig8.pdf  used on input line 522.
+Package pdftex.def Info: Fig8.pdf  used on input line 477.
 (pdftex.def)             Requested size: 246.0pt x 125.69237pt.
- [7 <./Fig6.pdf>]
-
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 541.
-
-(./Paper1.bbl [8 <./Fig7.pdf> <./Fig8.pdf>]
-
-Package natbib Warning: Citation `gius.17' on page 9 undefined on input line 12
-8.
-
-
-Underfull \hbox (badness 2409) in paragraph at lines 184--186
+ [7 <./Fig6.pdf> <./Fig7.pdf> <./Fig8.pdf>] (./Paper1.bbl [8]
+Underfull \hbox (badness 2409) in paragraph at lines 178--180
  []\OT1/cmr/m/n/9 The re-main-ing leak cur-rent orig-i-nates ei-ther from
  []
 
-)
-
-Package natbib Warning: There were undefined citations.
-
-[9] (./Paper1.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+) [9] (./Paper1.aux)
 Package rerunfilecheck Info: File `Paper1.out' has not changed.
 (rerunfilecheck)             Checksum: FD409D168B93DD4C57F58012757154FA;1232.
  ) 
 Here is how much of TeX's memory you used:
- 10036 strings out of 479825
- 145096 string characters out of 5880875
- 506818 words of memory out of 5000000
- 26740 multiletter control sequences out of 15000+600000
+ 10040 strings out of 479825
+ 145160 string characters out of 5880875
+ 507431 words of memory out of 5000000
+ 26743 multiletter control sequences out of 15000+600000
  418583 words of font info for 87 fonts, out of 8000000 for 9000
  891 hyphenation exceptions out of 8191
- 81i,19n,88p,1240b,582s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 81i,19n,88p,1422b,582s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc} </afs/itp.tugraz
 .at/user/gazzaneo/.texlive2020/texmf-var/fonts/pk/ljfour/public/bbm/bbm10.600pk
 ></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
-ib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmm
-ib7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmi
-b9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm5.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texmf/fonts/type1
-/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfr
-m0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on Paper1.pdf (9 pages, 899149 bytes).
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmex
+tra/cmmib7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmext
+ra/cmmib9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti1
+0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm5.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texmf/font
+s/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-su
+per/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on Paper1.pdf (9 pages, 892983 bytes).
 PDF statistics:
- 699 PDF objects out of 1000 (max. 8388607)
- 626 compressed objects within 7 object streams
- 107 named destinations out of 1000 (max. 500000)
+ 696 PDF objects out of 1000 (max. 8388607)
+ 624 compressed objects within 7 object streams
+ 108 named destinations out of 1000 (max. 500000)
  185 words of extra memory for PDF output out of 10000 (max. 10000000)
 
