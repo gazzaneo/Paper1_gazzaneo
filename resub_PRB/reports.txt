@@ -1,0 +1,138 @@
+From: prb@aps.org <prb@aps.org>
+Sent: 24 October 2022 19:33
+To: Gazzaneo, Paolo
+Subject: Your_manuscript BW13806 Gazzaneo
+ 
+Re: BW13806
+    Impact ionization processes in a photodriven Mott insulator: Influence
+    of phononic dissipation
+    by Paolo Gazzaneo, Tommaso Maria Mazzocchi, Jan Lotze, et al.
+
+Dear Dr. Gazzaneo,
+
+The above manuscript has been reviewed by two of our referees.
+Comments from the reports appear below for your consideration.
+
+When you resubmit your manuscript, please include a summary of the
+changes made and a brief response to all recommendations and
+criticisms.
+
+Yours sincerely,
+
+Sarma Kancharla
+Associate Editor
+Physical Review B
+Email: prb@aps.org
+https://journals.aps.org/prb/
+Physical Review B
+journals.aps.org
+Physical Review B
+
+
+Follow us on Twitter @PhysRevB
+
+NEWS FROM THE PHYSICAL REVIEW JOURNALS
+
+PRX Energy is now open for submissions
+https://go.aps.org/3lNdIqK
+	
+PRX Energy
+go.aps.org
+PRX Energy will be a highly selective, open access journal featuring energy research with an emphasis on lasting and profound impact.
+
+
+
+----------------------------------------------------------------------
+Report of the First Referee -- BW13806/Gazzaneo
+----------------------------------------------------------------------
+
+In the present paper a model for photovoltaic energy collection
+consisting of a Mott insulating layer in the presence of acoustic
+phonons, coupled to two wideband fermion leads and driven into a
+nonequilibrium steady state by a periodic electric field, is studied.
+This study is done using nonequilibrium dynamical mean-field theory
+(DMFT) and it includes dissipation by acoustic phonons.
+
+The study is done in two regimes: of small and large hybridization
+strength to the leads. In the former regime, a peak in the
+photocurrent as a function of the driving frequency which can be
+associated with impact ionization processes was found. In the latter
+regime a shallow peak seen suggests a suppression of impact ionization
+with respect to direct photovoltaic excitations. In addition, the role
+of acoustic phonons was investigated.
+
+The work is certainly impressive, thorough and very interesting for
+both its fundamental aspects as well as for the lessons learned for
+potential future unconventional and revolutionary applications of
+light-to-electricity conversion.
+
+I have the following comments and questions for the authors’ future
+work:
+
+1. As the authors pointed out the electric field amplitude considered
+in this paper is several orders of magnitude larger than that of the
+sunlight, therefore, strictly speaking the results presented in the
+present paper are more applicable to intense laser-light
+photoexcitations
+
+2. The authors have made an effort to extrapolate in the regime of
+smaller electric field amplitude and smaller hybridization strength.
+They note that in order to achieve the latter one would need to
+several layers where photexcited carriers separated by an electric
+field gradient would have more time to induce impact ionization before
+escaping into the leads.
+
+3. The authors plan in future investigation to address the previously
+mentioned issue.
+
+4. I would like to suggest that, perhaps, the authors, in their future
+investigations, could include the role of “bad” metallic contacts,
+maybe represented by narrow-band leads or possibly with a small-width
+insulating barrier between the leads and the material as abstracted by
+the Hubbard-like model studied. If the insulating barrier is
+microscopically small the carriers would still be able to tunnel, but
+perhaps would remain longer in the region of the material which might
+allow II to occur.
+
+In conclusion, this is an excellent work which sheds important light
+on the issue of how to use strongly correlated insulators to enhanced
+photovoltaic efficiency.
+
+I recommend publication in Physical Review B without hesitation.
+
+----------------------------------------------------------------------
+Report of the Second Referee -- BW13806/Gazzaneo
+----------------------------------------------------------------------
+
+In this work, the authors consider nonequilibrium steady-state current
+in a layer system modeled by Hubbard model with phonon interaction,
+when the system is also coupled to leads. The authors find interesting
+results, especially a combined effects of hybridization to the leads
+and phonons on impact ionization. This is a very complicated problem (
+as almost all non-trivial nonequilibrium problems, especially in
+strongly correlated case), were most of new results are valuable and
+insightful. Thus, despite some possibly crude approximations and an
+approximated relation to "reality", I believe the paper has to be
+published in Physical Review B.
+
+However, the authors should take seriously the following points which
+should be also explicitly discussed in the text:
+
+1. It is really important to discuss why DMFT approximation is
+expected to be meaningful in quasi-2D case (1-layer Hubbard model
+coupled to leads).
+
+2. It seems that chosen temperature is pretty high. Please discuss why
+optical phonons are neglected.
+
+3. It is naturally expected that phonons reduce the bandgap (here,
+pseudogap), as in standard semiconductors, where the phonons give
+10-100meV reduction of the gap and the effect increases with
+temperature. Strictly speaking, to obtain the change of the
+bandstructure due to phonons one needs to calculate the Fan and DW
+terms of the , generally speaking, momentum-dependent electron
+self-energy. In this sense, again, how important are momentum
+dependencies of electron Sigma in 2D case?
+
+4. It is not clear from Conclusions (at least for me) what stopped the
+authors to consider more realistic weaker fields and hybridizations.

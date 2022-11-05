@@ -67,14 +67,6 @@ E. Manousakis, Scientific Reports {\bf 9},  20395  (2019).
 \bibitem{ma.ev.22}
 F. Maislinger and H.~G. Evertz, Phys. Rev. B {\bf 105},  045114  (2022).
 
-\bibitem{ec.we.14}
-M. Eckstein and P. Werner, Phys. Rev. Lett. {\bf 113},  076405  (2014).
-
-\bibitem{ro.ha.18}
-G. Rohringer, H. Hafermann, A. Toschi, A.~A. Katanin, A.~E. Antipov, M.~I.
-  Katsnelson, A.~I. Lichtenstein, A.~N. Rubtsov, and K. Held, Rev. Mod. Phys.
-  {\bf 90},  025003  (2018).
-
 \bibitem{peie.33}
 R. Peierls, Zeitschrift f\"ur Physik A Hadrons and Nuclei {\bf 80},  763
   (1933).
@@ -157,8 +149,8 @@ A. Dorda, M. Sorantin, W. von~der Linden, and E. Arrigoni, New J. Phys. {\bf
   19},  063005  (2017).
 
 \bibitem{Note4}
-{\protect \color {hblue} The value chosen for the temperature is small as
-  compared with the other characteristic energy scales of the system, e.g.
+{\protect \color {hblue} The value chosen for the temperature is much smaller
+  as compared with the other characteristic energy scales of the system, e.g.
   $\omega _{\protect \text {ph}}$, $U$ and $W_{\protect \text {b}}$.}
 
 \bibitem{Note5}
@@ -196,6 +188,14 @@ Reducing $\omega _{\protect \text {ph}}$ has two effects. First, the phonon
   $\protect \bm {q}_{\protect \text {max}}$ via $\omega _{\protect \text
   {ph}}=\omega (\protect \bm {q}_{\protect \text {max}})$~\cite {ma.ga.22},
   meaning that short-wavelength phonons are suppressed.
+
+\bibitem{ec.we.14}
+M. Eckstein and P. Werner, Phys. Rev. Lett. {\bf 113},  076405  (2014).
+
+\bibitem{ro.ha.18}
+G. Rohringer, H. Hafermann, A. Toschi, A.~A. Katanin, A.~E. Antipov, M.~I.
+  Katsnelson, A.~I. Lichtenstein, A.~N. Rubtsov, and K. Held, Rev. Mod. Phys.
+  {\bf 90},  025003  (2018).
 
 \bibitem{gius.17}
 F. Giustino, Rev. Mod. Phys. {\bf 89},  015003  (2017).

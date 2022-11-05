@@ -65,7 +65,7 @@ A1: As the Referee says, the system considered here is not strictly 2D. There is
 On the other hand, it is true that antiferromagnetic (even short-range) correlations may play an important role in the spreading of photoexcited carriers, as discussed in Phys. Rev. Lett. 113, 076405
 (2014). These nonlocal effects are not taken into account in our paper and certainly deserve future investigations.
 
-As asked, we added in Sec. I a discussion on this point, with a reference to the paper mentioned above and to a comprehensive review of nonlocal correlations beyond DMFT [Rev. Mod. Phys. 90, 025003 (2018)].
+As asked, we added in the conclusions a discussion on this point, with a reference to the paper mentioned above and to a comprehensive review of nonlocal correlations beyond DMFT [Rev. Mod. Phys. 90, 025003 (2018)].
     
 
 2. It seems that chosen temperature is pretty high. Please discuss why
@@ -113,8 +113,6 @@ List of changes:
 
 Motivated by questions/observations from Second Referee: 
 
-Modified Sec. I  
-Added references in Sec. I
 Added footnote in Sec. IV
 Modified Sec. V
 Added reference in Sec. V
