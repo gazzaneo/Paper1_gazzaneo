@@ -1,0 +1,203 @@
+\begin{thebibliography}{10}
+
+\bibitem{mano.10}
+E. Manousakis, Phys. Rev. B {\bf 82},  125109  (2010).
+
+\bibitem{li.ch.13}
+H. Liang, L. Cheng, X. Zhai, N. Pan, H. Guo, J. Zhao, H. Zhang, L. Li, X.
+  Zhang, X. Wang, C. Zeng, Z. Zhang, and J.~G. Hou, Sci. Rep. {\bf 3},  1
+  (2013).
+
+\bibitem{gu.gu.13}
+H.-Z. Guo, L. Gu, Z.-Z. Yang, S.-F. Wang, G.-S. Fu, L. Wang, K.-J. Jin, H.-B.
+  Lu, C. Wang, C. Ge, M. He, and G.-Z. Yang, Europhys. Lett. {\bf 103},  47006
+  (2013).
+
+\bibitem{co.ma.14}
+J.~E. Coulter, E. Manousakis, and A. Gali, Phys. Rev. B {\bf 90},  165142
+  (2014).
+
+\bibitem{wa.li.15}
+L. Wang, Y. Li, A. Bera, C. Ma, F. Jin, K. Yuan, W. Yin, A. David, W. Chen, W.
+  Wu, W. Prellier, S. Wei, and T. Wu, Phys. Rev. Applied {\bf 3},  064015
+  (2015).
+
+\bibitem{sh.qu.61}
+W. Shockley and H.~J. Queisser, Journal of Applied Physics {\bf 32},  510
+  (1961).
+
+\bibitem{ho.bi.16}
+J. Holleman, M.~M. Bishop, C. Garcia, J.~S.~R. Vellore~Winfred, S. Lee, H.~N.
+  Lee, C. Beekman, E. Manousakis, and S.~A. McGill, Phys. Rev. B {\bf 94},
+  155129  (2016).
+
+\bibitem{as.bl.13}
+E. Assmann, P. Blaha, R. Laskowski, K. Held, S. Okamoto, and G. Sangiovanni,
+  Phys. Rev. Lett. {\bf 110},  078701  (2013).
+
+\bibitem{je.re.18}
+M. Jellite, J.-L. Rehspringer, M. Fazio, D. Muller, G. Schmerber, G.
+  Ferblantier, S. Colis, A. Dinia, M. Sugiyama, A. Slaoui, D. Cavalcoli, and T.
+  Fix, Solar Energy {\bf 162},  1   (2018).
+
+\bibitem{ec.we.11}
+M. Eckstein and P. Werner, Phys. Rev. B {\bf 84},  035122  (2011).
+
+\bibitem{ec.we.13}
+M. Eckstein and P. Werner, Phys. Rev. B {\bf 88},  075135  (2013).
+
+\bibitem{we.he.14}
+P. Werner, K. Held, and M. Eckstein, Phys. Rev. B {\bf 90},  235102  (2014).
+
+\bibitem{pe.be.19}
+F. Petocchi, S. Beck, C. Ederer, and P. Werner, Phys. Rev. B {\bf 100},  075147
+   (2019).
+
+\bibitem{so.do.18}
+M.~E. Sorantin, A. Dorda, K. Held, and E. Arrigoni, Phys. Rev. B {\bf 97},
+  115113  (2018).
+
+\bibitem{ka.wo.20}
+A. Kauch, P. Worm, P. Prauhart, M. Innerberger, C. Watzenb\"ock, and K. Held,
+  Phys. Rev. B {\bf 102},  245125  (2020).
+
+\bibitem{mano.19}
+E. Manousakis, Scientific Reports {\bf 9},  20395  (2019).
+
+\bibitem{ma.ev.22}
+F. Maislinger and H.~G. Evertz, Phys. Rev. B {\bf 105},  045114  (2022).
+
+\bibitem{peie.33}
+R. Peierls, Zeitschrift f\"ur Physik A Hadrons and Nuclei {\bf 80},  763
+  (1933).
+
+\bibitem{ts.ok.08}
+N. Tsuji, T. Oka, and H. Aoki, Phys. Rev. B {\bf 78},  235124  (2008).
+
+\bibitem{mu.we.18}
+Y. Murakami and P. Werner, Phys. Rev. B {\bf 98},  075102  (2018).
+
+\bibitem{ma.ga.22}
+T.~M. Mazzocchi, P. Gazzaneo, J. Lotze, and E. Arrigoni, Phys. Rev. B {\bf
+  106},  125123  (2022).
+
+\bibitem{ge.ko.92}
+A. Georges and G. Kotliar, Phys. Rev. B {\bf 45},  6479  (1992).
+
+\bibitem{ao.ts.14}
+H. Aoki, N. Tsuji, M. Eckstein, M. Kollar, T. Oka, and P. Werner, Rev. Mod.
+  Phys. {\bf 86},  779  (2014).
+
+\bibitem{Note1}
+With such choice for $t^{\ast }$ we reproduce the DOS of a 2D layer with
+  $t_{\protect \text {c}}=1$ in order to compare with Ref.~\cite {so.do.18}.
+
+\bibitem{sc.mo.02u}
+P. Schmidt and H. Monien, cond-mat/0202046 (unpublished).
+
+\bibitem{jo.fr.08}
+A.~V. Joura, J.~K. Freericks, and T. Pruschke, Phys. Rev. Lett. {\bf 101},
+  196401  (2008).
+
+\bibitem{schw.61}
+J. Schwinger, J. Math. Phys. {\bf 2},  407  (1961).
+
+\bibitem{keld.65}
+L.~V. Keldysh, Sov. Phys. JETP {\bf 20},  1018  (1965).
+
+\bibitem{ra.sm.86}
+J. Rammer and H. Smith, Rev. Mod. Phys. {\bf 58},  323  (1986).
+
+\bibitem{ha.ja}
+H. Haug and A.-P. Jauho, {\em Quantum Kinetics in Transport and Optics of
+  Semiconductors} (Springer, Heidelberg, 1998).
+
+\bibitem{Note2}
+In fact, there is an indirect feedback via the DMFT self-consistency.
+
+\bibitem{pi.li.21}
+A. Picano, J. Li, and M. Eckstein, Phys. Rev. B {\bf 104},  085108  (2021).
+
+\bibitem{me.vo.89}
+W. Metzner and D. Vollhardt, Phys. Rev. Lett. {\bf 62},  324  (1989).
+
+\bibitem{ge.ko.96}
+A. Georges, G. Kotliar, W. Krauth, and M.~J. Rozenberg, Rev. Mod. Phys. {\bf
+  68},  13  (1996).
+
+\bibitem{Note3}
+More specifically, we verified that in the parameter range in which FDSA is
+  justified for the electron SE $\protect \underline {\protect \bm {\Sigma
+  }}(\omega )$ (Sec.~\ref {sec:results}), the off-diagonal terms of the e-ph SE
+  $\protect \underline {\protect \bm {\Sigma }}_{\protect \text {e-ph}}(\omega
+  )$ are sufficiently suppressed.
+
+\bibitem{ar.kn.13}
+E. Arrigoni, M. Knap, and W. von~der Linden, Phys. Rev. Lett. {\bf 110},
+  086403  (2013).
+
+\bibitem{do.nu.14}
+A. Dorda, M. Nuss, W. von~der Linden, and E. Arrigoni, Phys. Rev. B {\bf 89},
+  165105  (2014).
+
+\bibitem{do.ga.15}
+A. Dorda, M. Ganahl, H.~G. Evertz, W. von~der Linden, and E. Arrigoni, Phys.
+  Rev. B {\bf 92},  125145  (2015).
+
+\bibitem{do.so.17}
+A. Dorda, M. Sorantin, W. von~der Linden, and E. Arrigoni, New J. Phys. {\bf
+  19},  063005  (2017).
+
+\bibitem{Note4}
+The value chosen for the temperature is much smaller than the other
+  characteristic energy scales of the system, e.g. $\omega _{\protect \text
+  {ph}}$, $U$ and $W_{\protect \text {b}}$.
+
+\bibitem{Note5}
+Notice that the support of the leads' spectra are formally infinite.
+  $W_{\protect \text {b}}$ is the value at which the spectrum gets suppressed.
+
+\bibitem{Note6}
+In Ref.~\cite {so.do.18} the factor is defined as $\alpha =t_{c}E_0/\Omega
+  ^{2}$ and $t_{\protect \text {c}}=1$. Setting $t_{\protect \text {resc}}=1$,
+  we define for consistency $\alpha $ as in the main text.
+
+\bibitem{Note7}
+Due to the hybridization with the metallic leads only a pseudogap $\Delta
+  _{\protect \text {pg}}$ is present between the LHB and the UHB.
+
+\bibitem{Note8}
+The remaining leak current originates either from multiple-photon absorption
+  processes which are strongly suppressed, or from the absence of a true gap.
+
+\bibitem{Note9}
+Notice that the increase of $N_{\protect \text {D}}$ in Fig.~\ref
+  {fig:j_vs_omega_mu1_v_0.4_0.8_eph}(b) as compared to Ref.~\cite {so.do.18} is
+  not as steep and large in magnitude. This is due to our setup, where every
+  photoexcited carrier can escape into the right lead.
+
+\bibitem{Note10}
+The current $j$ does not approach zero as expected for $\Omega >20$ because of
+  the background current as discussed in Ref.~\cite {so.do.18}.
+
+\bibitem{Note11}
+Reducing $\omega _{\protect \text {ph}}$ has two effects. First, the phonon
+  spectral function $A_{\protect \text {ph}}(\omega )$ exhibits more weight at
+  low frequencies around $\omega \approx \omega _{\protect \text {ph}}$.
+  Second, it restricts the maximum value of the reciprocal lattice vector
+  $\protect \bm {q}_{\protect \text {max}}$ via $\omega _{\protect \text
+  {ph}}=\omega (\protect \bm {q}_{\protect \text {max}})$~\cite {ma.ga.22},
+  meaning that short-wavelength phonons are suppressed.
+
+\bibitem{ec.we.14}
+M. Eckstein and P. Werner, Phys. Rev. Lett. {\bf 113},  076405  (2014).
+
+\bibitem{ro.ha.18}
+G. Rohringer, H. Hafermann, A. Toschi, A.~A. Katanin, A.~E. Antipov, M.~I.
+  Katsnelson, A.~I. Lichtenstein, A.~N. Rubtsov, and K. Held, Rev. Mod. Phys.
+  {\bf 90},  025003  (2018).
+
+\bibitem{gius.17}
+F. Giustino, Rev. Mod. Phys. {\bf 89},  015003  (2017).
+
+\end{thebibliography}
